@@ -138,7 +138,7 @@ input {
    width: 12em;
 }
 .foot{
-   background-color: white;
+   background-color: rgb(255, 189, 189);
    margin-top: 1.5em;
    padding: 1em;
 }

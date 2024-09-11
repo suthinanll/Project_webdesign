@@ -1,0 +1,81 @@
+/* css หลักใช้ทุกๆหน้า */
+body {
+    max-width: 1980px;      
+    min-width: 320px;
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    width: 4em;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+  }
+
+  .dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu .dropdown-menu {
+    left: 100%;
+    top: 0;
+    margin-left: 0;
+    display: none;
+  }
+
+  .dropdown-submenu:hover .dropdown-menu {
+    display: block;
+  }
+
+  .imgfooter{
+    width: 12em;
+ }
+ .foot{
+    background-color: white;
+    margin-top: 1.5em;
+    padding: 1em;
+ }
+ /* css ใช้ทุกๆหน้า end */
+ 
+
+ .btnadd{
+  text-decoration: none;
+  color: black;
+  border: 1px solid gray;
+  padding: .5em;
+  display: block;
+  border-radius: 10px;
+ }
+
+ .btnadd:hover{
+  background-color: rgb(243, 243, 243);
+ }
+ .btn{
+  width: 100%;
+ }
+ .address{
+  margin-top: 1em;
+  padding: 1em;
+  text-align: center;
+ }
+ .box{
+  padding: 20px;
+  border: 1px solid rgb(190, 190, 190);
+ }
+ 
+ .add{
+  background-color: orange;
+  color: white;
+ }
+ .add:hover{
+  background-color: rgb(255, 153, 0);
+  color: white;
+ }

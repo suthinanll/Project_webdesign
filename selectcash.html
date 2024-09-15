@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tail & Paw</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid ms-2 me-2">
+            <a class="navbar-brand" href="#"><img class="logo" src="img/logo2.png"
+                    alt="รูปภาพโลโก้เว็บไซต์ Tail and Paw"></a>
+            <div class="d-flex d-lg-none ms-auto align-items-center">
+                <span class="d-flex me-4 iconphone" style="font-size: 1.25em;">
+                    <a class="nav-link me-2" href="#"><i class="bi bi-cart3"></i></a>
+                    <a class="nav-link me-1" href="#"><i class="bi bi-bell-fill"></i></a>
+                    <a class="nav-link ms-1" href="#"><i class="bi bi-person-fill"></i></a>
+                </span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">หน้าหลัก</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">สินค้า</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">อาหาร และ ขนม</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">สำหรับสุนัข</a></li>
+                                    <li><a class="dropdown-item" href="#">สำหรับสแมว</a></li>
+                                    <li><a class="dropdown-item" href="#">สัตว์ชนิดอื่นๆ</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">ผลิตภัณฑ์ดูแลขน</a></li>
+                            <li><a class="dropdown-item" href="#">สินค้าอื่นๆ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">วิธีการสั่งซื้อสอนค้า</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">เกี่ยวกับเรา</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contack.html">ติดต่อเรา</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto d-none d-lg-flex">
+                    <li class="nav-item ">
+                        <a class="nav-link" style="font-size: 1.2em;" href="#"><i class="bi bi-cart3"></i></a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a class="nav-link me-1" style="font-size: 1.2em;" href="#"><i class="bi bi-bell-fill"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: 1.2em;" href="#"><i class="bi bi-person-fill"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid"><br>
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item ms-3"><a href="index.html">หน้าหลัก</a></li>
+                <li class="breadcrumb-item ms-3"><a href="index.html">ตะกร้าสินค้า</a></li>
+                <li class="breadcrumb-item active" aria-current="page">ตะกร้าสินค้า</li>
+            </ol>
+        </nav>
+        <div class="container-fluid  my-4">
+            <h4 class="text-muted mb-3">ที่อยู่สำหรับการจัดส่ง</h4>
+            <div class="box-container">
+                <p class="text-muted box">
+                    บ้านเลขที่ 123 หมู่ 24 บ้านโนนม่วง ตำบลศิลา อำเภอเมืองขอนแก่น
+                    จังหวัดขอนแก่น รหัสไปรษณีย์ 4000
+                </p>
+            </div>
+            <h4 class="text-muted mb-3">รายการสินค้า</h4>
+            <table class="table cart-table">
+                <thead>
+                    <tr>
+                        <th>สินค้า</th>
+                        <th>ราคา</th>
+                        <th>จำนวน</th>
+                        <th colspan="2">ยอดรวม</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="item-description">
+                                <img src="img/p2.png" alt="รูปภาพสินค้า">
+                                <p>Pedigree อาหารสุนัข Simmered Beef Loaf with Vegetables สูตรรสเนื้อวัวตุ๋นบดพร้อมผัก -
+                                    130g</p>
+                            </div>
+                        </td>
+                        <td><span class="phoneshow">ราคา </span>฿24.00</td>
+                        <td><span class="phoneshow">จำนวน </span>1</td>
+                        <td><span class="phoneshow">ยอดรวม :</span> ฿24.00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="item-description">
+                                <img src="img/p2.jpg" alt="รูปภาพสินค้า">
+                                <p>Petsimo เพ็ทซิโม่ อาหารสุนัขแบบเปียก สูตรไก่หน้าเนื้อวัวในเยลลี่ - 70g (ได้ 6 ซอง)
+                                </p>
+                            </div>
+                        </td>
+                        <td><span class="phoneshow">ราคา </span>฿156.00</td>
+                        <td><span class="phoneshow">จำนวน </span>2</td>
+                        <td><span class="phoneshow">ยอดรวม :</span>฿312.00</td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="container-fluid radioselect">
+                <h4>การจัดส่งสินค้า</h4>
+                <ul>
+                    <li><input type="radio" name="s1"> การจัดส่งแบบธรรมดา (แบบลงทะเบียน 30 บาท)</li>
+                    <li><input type="radio" name="s1"> การจัดส่งแบบเร็วพิเศษ (แบบ EMS 50 บาท )</li>
+                </ul>
+                <h4>การชำระเงิน</h4>
+                <ul>
+                    <li><input type="radio" name="s1"> บัญชีธนาคาร</li>
+                    <li><input type="radio" name="s1"> พร้อมเพย์</li>
+                </ul>
+            </div>
+            <div class="container-fluid checkout">
+                <div class="total borfer-bottom">ราคาสินค้าทั้งหมด<br> ค่าจัดส่ง<br>ยอดรวมทั้งหมด</div>
+                <div class="total"> ฿336.00 <br> ฿30.00 <br>฿366.00</div>
+            </div> <br>
+            <a class="btn add" href="add_address.html">
+                ยืนยันการสั่งสินค้า
+            </a>
+        </div>
+    </div>
+
+    <div class="container-fluid foot">
+        <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-2 my-1 ">
+                <div class="col mb-3">
+                    <img class="imgfooter" src="img/logo2.png" alt="รูปภาพโลโก้เว็บไซต์">
+                </div>
+
+                <div class="col mb-3">
+                </div>
+
+                <div class="col mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">หน้าหลัก</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">สินค้า</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">วิธีการซื้อสินค้า</a></li>
+                        <li class="nav-item mb-2"><a href="About.html" class="nav-link p-0 text-muted">เกี่ยวกับเรา</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ตะกร้าสินค้า</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">สินค้าที่ถูกใจ</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">กล่องข้อความ</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">บัญขีผู้ใช้</a></li>
+                    </ul>
+                </div>
+
+                <div class="col mb-3 btncontact">
+                    <h5>ช่องทางการติดต่อ</h5>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-line"></i></a>
+                    <a href="#"><i class="bi bi-envelope"></i></a>
+                </div>
+            </footer>
+            <p class="text-muted">© 2024 Company, Tail & Paw. All rights reserved.</p><br>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/scrip.js"></script>
+</body>
+
+</html>

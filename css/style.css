@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* css หลักใช้ทุกๆหน้า */
 body {
     max-width: 1980px;      
@@ -5,6 +6,7 @@ body {
     margin: 0 ;
     padding: 0;
     box-sizing: border-box;
+    font-family: kanit;
   }
 
   .logo {
@@ -34,18 +36,16 @@ body {
   .dropdown-submenu:hover .dropdown-menu {
     display: block;
   }
-
+  .navbar{
+    background-color: #fff9a0;
+  }
   .imgfooter{
     width: 12em;
  }
- .foot{
-    background-color: white;
-    margin-top: 1.5em;
-    padding: 1em;
- }
- /* css ใช้ทุกๆหน้า end */
- 
-
+.foot{
+  background-color: #ffc423;
+}
+/* End */
  .btnadd{
   text-decoration: none;
   color: black;
@@ -79,3 +79,189 @@ body {
   background-color: rgb(255, 153, 0);
   color: white;
  }
+ th{
+  background-color: rgb(235, 235, 235);
+  text-align: center;
+  padding: .7em;
+  font-size: 1.em;
+  font-weight:normal ;
+ }
+.imgabout{
+  width: 14em;
+  padding: 2em 0 0 2em;
+
+}
+.textabout{
+  padding: 0 2em 0 2em;
+  font-size: 1.1em;
+}
+
+.content {
+  width: 100%;
+  padding: 20px;
+}
+.iconphone a{
+  color: rgb(128, 128, 128);
+}
+.iconphone a:hover{
+  color: rgb(0, 0, 0);
+}
+.contact{
+  margin-left: 2em;
+  line-height: 1.7em;
+  font-size: 1.1em;
+  word-spacing: .2em;
+}
+.Facebook{
+  color: rgb(0, 81, 255);
+}
+.ig{
+  color: crimson;
+}
+.iline{
+  color: rgb(0, 165, 0);
+}
+.bank-details{
+  border: 1.9px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+}
+.btncash{
+  border: none;
+  background-color: rgb(255, 145, 0);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.btncash:hover{
+  background-color: rgb(241, 146, 3);
+}
+
+/* รายการสินค้า start */
+
+.cart-table {
+  width: 100%;
+}
+.cart-table thead th {
+  background-color: #000000;
+  text-align: center;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: normal;
+  color: #ffffff;
+}
+.cart-table tbody td {
+  border: none;
+  padding: 15px;
+  vertical-align: middle;
+  background-color: #ffffff;
+  font-size: 1em;
+  border-bottom: 2px solid #e6e6e6;
+}
+.cart-table img {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+}
+.item-description {
+  display: flex;
+  align-items: center;
+}
+.item-description p {
+  margin: 0;
+
+}
+.cart-table .controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cart-table .controls input {
+  width: 40px;
+  text-align: center;
+}
+.cart-table .remove {
+  cursor: pointer;
+  color: #ff5f5f;
+  font-size: 1.2em;
+}
+
+/* รายการสินค้า End */
+
+.checkout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 2px solid rgb(207, 207, 207);
+}
+.checkout .total {
+  font-size: 1em;
+}
+.checkout-btn {
+  background-color: #ffc423;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.checkout-btn:hover {
+  background-color: #ffbb00;
+}
+.phoneshow{
+  display: none;
+}
+.box-container {
+  position: relative; /* ทำให้สามารถจัดตำแหน่งปุ่มภายในกล่องได้ */
+}
+
+.box {
+  background-color: #f8f9fa; /* สีพื้นหลังสำหรับกล่องข้อความ */
+  position: relative; 
+}
+
+.btn-edit {
+  position: absolute;
+  top: 10px;
+  right: 1px;
+  width: 30px;
+  border: none;
+}
+.radioselect li{
+  list-style-type: none;
+}
+@media (max-width: 767px) {
+
+  .table td, .table th {
+    display: block;
+    width: 100%; 
+    text-align: right;
+  }
+
+  .table thead {
+    display: none; 
+  }
+.cart-table tbody td{
+  border-bottom: none;
+}
+  .phoneshow{
+    display: block;
+  }
+  .cart-table tr{
+    border-bottom: 2px solid rgb(202, 202, 202);
+  }
+  
+  .table td {
+    display: flex;
+    justify-content: space-between; 
+    padding: 0.5em; 
+  }
+  .controls span{
+    margin-right: 20px;
+  }
+  
+}

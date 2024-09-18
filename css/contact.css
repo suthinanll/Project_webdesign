@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* css หลักใช้ทุกๆหน้า */
+body {
+    max-width: 1980px;
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: kanit;
+}
+
+.logo {
+    width: 4em;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    left: 100%;
+    top: 0;
+    margin-left: 0;
+    display: none;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar {
+    background-color: #fff9a0;
+}
+
+.imgfooter {
+    width: 12em;
+}
+
+.foott {
+    background-color: #ffc423;
+}
+
+/* End */
+.contact2 {
+    margin-left: 0em;
+    line-height: 1.7em;
+    font-size: 1.1em;
+    word-spacing: .2em;
+}
+
+.Facebook {
+    color: rgb(0, 81, 255);
+}
+
+.ig {
+    color: crimson;
+}
+
+.iline {
+    color: rgb(0, 165, 0);
+}

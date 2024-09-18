@@ -71,57 +71,8 @@ body {
   padding: 20px;
   border: 1px solid rgb(190, 190, 190);
  }
+
  
- .add{
-  background-color: orange;
-  color: white;
- }
- .add:hover{
-  background-color: rgb(255, 153, 0);
-  color: white;
- }
- th{
-  background-color: rgb(235, 235, 235);
-  text-align: center;
-  padding: .7em;
-  font-size: 1.em;
-  font-weight:normal ;
- }
-.imgabout{
-  width: 14em;
-  padding: 2em 0 0 2em;
-
-}
-.textabout{
-  padding: 0 2em 0 2em;
-  font-size: 1.1em;
-}
-
-.content {
-  width: 100%;
-  padding: 20px;
-}
-.iconphone a{
-  color: rgb(128, 128, 128);
-}
-.iconphone a:hover{
-  color: rgb(0, 0, 0);
-}
-.contact{
-  margin-left: 2em;
-  line-height: 1.7em;
-  font-size: 1.1em;
-  word-spacing: .2em;
-}
-.Facebook{
-  color: rgb(0, 81, 255);
-}
-.ig{
-  color: crimson;
-}
-.iline{
-  color: rgb(0, 165, 0);
-}
 .bank-details{
   border: 1.9px solid #ccc;
   padding: 10px;

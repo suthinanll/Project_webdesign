@@ -184,4 +184,51 @@ body {
     }
     
   }
+
+
+  /* ประวัติการซื้อ */
+  .product-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.pdescription {
+    font-size: .9em;
+    color: #333;
+}
+
+.product-price {
+    font-weight: bold;
+    font-size: 1em;
+    color: #FF6F00;
+}
+
+.status {
+    background-color: #ebebeb;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #353d44;
+    font-size: 13px;
+}
+
+.buyagain {
+    margin-top: 5em;
+    width: 100%;
+    font-size: .75em;
+    border: none;
+    padding: 5px;
+    background-color: #ffbb00;
+    border-radius:10px ;
+}
+
+
   

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* css หลักใช้ทุกๆหน้า */
+:root {
+   --footet_header-color: rgb(255, 245, 158);
+   --botton-color:#FFB719;
+}
 body {
     max-width: 1980px;      
     min-width: 320px;
@@ -9,7 +13,9 @@ body {
     font-family: kanit;
     background-color: rgb(221, 221, 221);
   }
-
+  .navbar{
+   background-color: var(--footet_header-color);
+  }
   .logo {
     width: 4em;
   }
@@ -38,7 +44,7 @@ body {
     display: block;
   }
   .foott{
-   background-color: rgb(255, 245, 158);
+   background-color: var(--footet_header-color);
   }
 
  .line-text{
@@ -82,14 +88,14 @@ input {
 /* ปุ่มเข้าสู่ระบบ */
 .btnform {
     width: 100%;
-    background-color: rgb(0, 165, 165);
+    background-color: var(--botton-color);
     color: white;
     padding: 10px;
     border: none;
     border-radius: 20px; 
 }
 .btnform:hover{
-   background-color: rgb(0, 156, 161);
+   background-color: #ffae00;
 }
 
 
@@ -114,15 +120,7 @@ input {
     color: black;
     font-size: 18px;
  }
- .iconf{
-    color: rgb(0, 89, 255);
- }
- .iconl{
-    color: rgb(21, 177, 0);
- }
- .icong{
-    color: rgb(233, 0, 0);
- }
+
 
  .loginetc{
     padding: .5em;
@@ -134,7 +132,7 @@ input {
 
  /* ปุ่มไปหน้าสมัครสมาชิก */
 .regisbtn{
-   color: black;
+   color: rgb(253, 122, 0);
    text-decoration: none;
    font-weight:bold ;
 }
@@ -153,6 +151,13 @@ input {
    font-size: 1.4em;
    word-spacing: .2em;
 }
+.btncontact a{
+   color: rgb(48, 48, 48);
+}
+.btncontact a:hover{
+   color: black;
+}
+
 .btn2{
    background-color: white;
    color: black;

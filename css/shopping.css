@@ -159,8 +159,8 @@ body {
   .radioselect li{
     list-style-type: none;
   }
-  foott{
-    background-color: #ffc423;
+  .foott{
+    background-color: var(--footet_header-color);
   }
 
   .box{
@@ -231,5 +231,34 @@ body {
 }
 
 
+.linkb{
+  color: #000000;
+  text-decoration: none;
+}
+.linkb:hover{
+  text-decoration: underline;
+}
+.iconphone a {
+  color: rgb(117, 117, 117);
+}
 
-  
+.iconphone a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.btnactive{
+  color: #000000;
+}
+
+.btnadd{
+  text-decoration: none;
+  color: black;
+  border: 1px solid gray;
+  padding: .5em;
+  display: block;
+  border-radius: 10px;
+ }
+
+ .btnadd:hover{
+  background-color: rgb(243, 243, 243);
+ }

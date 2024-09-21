@@ -183,3 +183,17 @@ input {
    display: block;
    
 }
+.linkb{
+   color: #000000;
+   text-decoration: none;
+ }
+ .linkb:hover{
+   text-decoration: underline;
+ }
+ .iconphone a {
+   color: rgb(117, 117, 117);
+}
+
+.iconphone a:hover {
+   color: rgb(0, 0, 0);
+}

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* css หลักใช้ทุกๆหน้า */
+
+body {
+    max-width: 1980px;      
+    min-width: 320px;
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: kanit;
+    background-color: whitesmoke;
+  }
+  button a{
+    color: white;
+  }
+  a:active{
+    color: white;
+  }
+  a:visited{
+    color: whitesmoke;
+  }
+  
+  
+
+  .logo {
+    width: 4em;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+  }
+
+  .dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu .dropdown-menu {
+    left: 100%;
+    top: 0;
+    margin-left: 0;
+    display: none;
+  }
+
+  .dropdown-submenu:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar{
+    background-color: #fff9a0;
+  }
+  .imgfooter{
+    width: 12em;
+ }
+ .container-footer{
+    background-color: #fff9a0;
+}
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 30px;
+
+}
+
+.container-footer{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.official-shop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.official-shop  div {
+    color: #ff6600;
+    font-size: 0.9em;
+}
+.hr{
+    border: none;
+    border-top: 1px solid;
+    margin: 15px 0px 0 0px;
+}
+.product-info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+.product-info img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+.product-details {
+    flex-grow: 1;
+}
+.product-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.product-quantity {
+    color: #666;
+    font-size: 0.9em;
+}
+.price {
+    font-weight: bold;
+    text-align: right;
+}
+.total {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.rating-button {
+    margin-top: 20px;
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}

@@ -66,7 +66,7 @@
                     <li class="nav-item ">
                         <a class="nav-link" style="font-size: 1.2em;" href="shopping.html"><i class="bi bi-cart3"></i></a>
                     </li>
-                    <li class="nav-item"></li>
+                    <li class="nav-item">
                     <a class="nav-link me-1" style="font-size: 1.2em;" href="#"><i class="bi bi-bell-fill"></i></a>
                     </li>
                     <li class="nav-item">
@@ -101,7 +101,7 @@
                         <th>สินค้า</th>
                         <th>ราคา</th>
                         <th>จำนวน</th>
-                        <th colspan="2">ยอดรวม</th>
+                        <th>ยอดรวม</th> <!-- กำหนดเป็น 2 คอลัมน์ -->
                     </tr>
                 </thead>
                 <tbody>
@@ -109,41 +109,31 @@
                         <td>
                             <div class="item-description">
                                 <img src="img/p2.png" alt="รูปภาพสินค้า">
-                                <p>Pedigree อาหารสุนัข Simmered Beef Loaf with Vegetables สูตรรสเนื้อวัวตุ๋นบดพร้อมผัก -
-                                    130g</p>
+                                <p>Pedigree อาหารสุนัข Simmered Beef Loaf with Vegetables สูตรรสเนื้อวัวตุ๋นบดพร้อมผัก - 130g</p>
                             </div>
                         </td>
-                        <td><span class="phoneshow">ราคา </span>฿24.00</td>
-                        <td><span class="phoneshow">จำนวน </span>1</td>
-                        <td><span class="phoneshow">ยอดรวม :</span> ฿24.00</td>
+                        <td class="text-center">฿24.00</td>
+                        <td class="text-center">1</td>
+                        <td class="text-center">฿24.00</td> 
+                        
                     </tr>
                     <tr>
                         <td>
                             <div class="item-description">
                                 <img src="img/p2.jpg" alt="รูปภาพสินค้า">
-                                <p>Petsimo เพ็ทซิโม่ อาหารสุนัขแบบเปียก สูตรไก่หน้าเนื้อวัวในเยลลี่ - 70g (ได้ 6 ซอง)
-                                </p>
+                                <p>Petsimo เพ็ทซิโม่ อาหารสุนัขแบบเปียก สูตรไก่หน้าเนื้อวัวในเยลลี่ - 70g (ได้ 6 ซอง)</p>
                             </div>
                         </td>
-                        <td><span class="phoneshow">ราคา </span>฿156.00</td>
-                        <td><span class="phoneshow">จำนวน </span>2</td>
-                        <td><span class="phoneshow">ยอดรวม :</span>฿312.00</td>
-                        </td>
+                        <td class="text-center">฿156.00</td>
+                        <td class="text-center">2</td>
+                        <td class="text-center">฿312.00</td>
                     </tr>
+                    
                 </tbody>
             </table>
-            <div class="container-fluid radioselect">
-                <h4>การจัดส่งสินค้า</h4>
-                <ul>
-                    <li><input type="radio" name="s1"> การจัดส่งแบบธรรมดา (แบบลงทะเบียน 30 บาท)</li>
-                    <li><input type="radio" name="s1"> การจัดส่งแบบเร็วพิเศษ (แบบ EMS 50 บาท )</li>
-                </ul>
-                <h4>การชำระเงิน</h4>
-                <ul>
-                    <li><input type="radio" name="s2"> บัญชีธนาคาร</li>
-                    <li><input type="radio" name="s2"> พร้อมเพย์</li>
-                </ul>
-            </div>
+            
+            
+            
             <div class="container-fluid checkout">
                 <div class="total borfer-bottom">ราคาสินค้าทั้งหมด<br> ค่าจัดส่ง<br>ยอดรวมทั้งหมด</div>
                 <div class="total"> ฿ 336.00 <br> ฿ 30.00 <br>฿ 366.00</div>

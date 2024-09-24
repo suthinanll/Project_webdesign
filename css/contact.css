@@ -64,47 +64,23 @@ body {
     color: black;
  }
 /* End */
- 
-.btnadd{
-  text-decoration: none;
-  color: black;
-  border: 1px solid gray;
-  padding: .5em;
-  display: block;
-  border-radius: 10px;
- }
-
- .btnadd:hover{
-  background-color: rgb(243, 243, 243);
- }
- .btn{
-  width: 100%;
- }
- .address{
-  margin-top: 1em;
-  padding: 1em;
-  text-align: center;
- }
- .box{
-  padding: 20px;
-  border: 1px solid rgb(190, 190, 190);
- }
-
- 
-.bank-details{
-  border: 1.9px solid #ccc;
-  padding: 10px;
-  border-radius: 8px;
+.contact2 {
+    margin-left: 0em;
+    line-height: 1.7em;
+    font-size: 1.1em;
+    word-spacing: .2em;
 }
-.btncash{
-  border: none;
-  background-color: rgb(255, 201, 23);
-  color: rgb(0, 0, 0);
-  padding: 10px 20px;
-  border-radius: 10px;
+
+.Facebook {
+    color: rgb(0, 81, 255);
 }
-.btncash:hover{
-  background-color: rgb(255, 196, 0);
+
+.ig {
+    color: crimson;
+}
+
+.iline {
+    color: rgb(0, 165, 0);
 }
 
 .linkb{
@@ -121,4 +97,3 @@ body {
 .iconphone a:hover {
     color: rgb(0, 0, 0);
 }
-

@@ -64,47 +64,59 @@ body {
     color: black;
  }
 /* End */
- 
-.btnadd{
-  text-decoration: none;
-  color: black;
-  border: 1px solid gray;
-  padding: .5em;
-  display: block;
-  border-radius: 10px;
- }
 
- .btnadd:hover{
-  background-color: rgb(243, 243, 243);
- }
- .btn{
-  width: 100%;
- }
- .address{
-  margin-top: 1em;
-  padding: 1em;
-  text-align: center;
- }
- .box{
-  padding: 20px;
-  border: 1px solid rgb(190, 190, 190);
- }
+th {
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    padding: .7em;
+    font-size: 1.em;
+    font-weight: normal;
+}
+td{
+    border: 2px solid rgb(235, 235, 235);
+}
 
- 
-.bank-details{
-  border: 1.9px solid #ccc;
-  padding: 10px;
-  border-radius: 8px;
+.imgabout {
+    width: 14em;
+    padding: 2em 0 0 2em;
+
 }
-.btncash{
-  border: none;
-  background-color: rgb(255, 201, 23);
-  color: rgb(0, 0, 0);
-  padding: 10px 20px;
-  border-radius: 10px;
+
+.textabout {
+    padding: 0 2em 0 2em;
+    font-size: 1.1em;
 }
-.btncash:hover{
-  background-color: rgb(255, 196, 0);
+
+.content {
+    width: 100%;
+    padding: 20px;
+}
+
+.iconphone a {
+    color: rgb(117, 117, 117);
+}
+
+.iconphone a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.contact {
+    margin-left: 2em;
+    line-height: 1.7em;
+    font-size: 1.1em;
+    word-spacing: .2em;
+}
+
+.Facebook {
+    color: rgb(0, 81, 255);
+}
+
+.ig {
+    color: crimson;
+}
+
+.iline {
+    color: rgb(0, 165, 0);
 }
 
 .linkb{
@@ -114,11 +126,3 @@ body {
   .linkb:hover{
     text-decoration: underline;
   }
-  .iconphone a {
-    color: rgb(117, 117, 117);
-}
-
-.iconphone a:hover {
-    color: rgb(0, 0, 0);
-}
-

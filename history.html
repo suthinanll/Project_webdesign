@@ -32,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">หน้าหลัก</a>
+                        <a class="nav-link active" aria-current="page" href="#">หน้าหลัก</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -77,82 +77,53 @@
             </div>
         </div>
     </nav>
+    <div class="container-fluid my-4">
+        
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item ms-2"><a class="linkb" href="index.html">หน้าหลัก</a></li>
+          <li class="breadcrumb-item ms-1"><a class="linkb" href="Profile.html">บัญขีผู้ใช้</a></li>
+          <li class="breadcrumb-item active" aria-current="page">ประวัติการซื้อสินค้า</li>
+        </ol>
+      </nav>
 
-    <div class="container-fluid"><br>
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item ms-2"><a class="linkb" href="index.html">หน้าหลัก</a></li>
-                <li class="breadcrumb-item ms-1"><a class="linkb" href="shopping.html">ตะกร้าสินค้า</a></li>
-                <li class="breadcrumb-item active" aria-current="page">สั่งสินค้า</li>
-            </ol>
-        </nav>
-        <div class="container-fluid  my-4">
-            <h4 class="text mb-3">ที่อยู่สำหรับการจัดส่ง</h4>
-            <div class="box-container">
-                <p class="text-muted box">
-                    บ้านเลขที่ 123 หมู่ 24 บ้านโนนม่วง ตำบลศิลา อำเภอเมืองขอนแก่น
-                    จังหวัดขอนแก่น รหัสไปรษณีย์ 4000
-                </p>
+        <div class="container mt-4">
+            <h4>ประวัติการซื้อสินค้า</h4>
+    
+            <div class="row align-items-center mb-3 product-card">
+                <div class="col-2">
+                    <img src="img/p2.png" alt="product-image" class="img-fluid">
+                </div>
+                <div class="col-7">
+                    <p class="text-muted">จัดส่งสำเร็จ</p>
+                    <p class="pdescription">Pedigree อาหารสูตร Simmered Beef Loaf with Vegetables<br>
+                    สูตรรสเนื้อตุ๋นผสมผัก – 130g</p>
+                    <span class="product-price">฿ 24.00 บาท</span>
+                </div>
+                <div class="col-3 d-flex justify-content-end">
+                    <button type="button" class="btn btn-danger ">สั่งซื้ออีกครั้ง <i class="bi bi-cart3"></i></button>
+                </div>
             </div>
-            <h4 class="text mb-3">รายการสินค้า</h4>
-            <table class="table cart-table">
-                <thead>
-                    <tr>
-                        <th>สินค้า</th>
-                        <th>ราคา</th>
-                        <th>จำนวน</th>
-                        <th colspan="2">ยอดรวม</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="item-description">
-                                <img src="img/p2.png" alt="รูปภาพสินค้า">
-                                <p>Pedigree อาหารสุนัข Simmered Beef Loaf with Vegetables สูตรรสเนื้อวัวตุ๋นบดพร้อมผัก -
-                                    130g</p>
-                            </div>
-                        </td>
-                        <td><span class="phoneshow">ราคา </span>฿24.00</td>
-                        <td><span class="phoneshow">จำนวน </span>1</td>
-                        <td><span class="phoneshow">ยอดรวม :</span> ฿24.00</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="item-description">
-                                <img src="img/p2.jpg" alt="รูปภาพสินค้า">
-                                <p>Petsimo เพ็ทซิโม่ อาหารสุนัขแบบเปียก สูตรไก่หน้าเนื้อวัวในเยลลี่ - 70g (ได้ 6 ซอง)
-                                </p>
-                            </div>
-                        </td>
-                        <td><span class="phoneshow">ราคา </span>฿156.00</td>
-                        <td><span class="phoneshow">จำนวน </span>2</td>
-                        <td><span class="phoneshow">ยอดรวม :</span>฿312.00</td>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="container-fluid radioselect">
-                <h4>การจัดส่งสินค้า</h4>
-                <ul>
-                    <li><input type="radio" name="s1"> การจัดส่งแบบธรรมดา (แบบลงทะเบียน 30 บาท)</li>
-                    <li><input type="radio" name="s1"> การจัดส่งแบบเร็วพิเศษ (แบบ EMS 50 บาท )</li>
-                </ul>
-                <h4>การชำระเงิน</h4>
-                <ul>
-                    <li><input type="radio" name="s2"> บัญชีธนาคาร</li>
-                    <li><input type="radio" name="s2"> พร้อมเพย์</li>
-                </ul>
+    
+            <div class="row align-items-center mb-3 product-card">
+                <div class="col-2">
+                    <img src="img/p2.jpg" alt="product-image" class="img-fluid">
+                </div>
+                <div class="col-7">
+                    <p class="text-muted">จัดส่งสำเร็จ</p>
+                    <p class="pdescription">Petsimo เพ็ทซิโม อาหารสุขภาพแบบเปียก<br>
+                    สูตรไก่บ้านเนื้อวัวในเยลลี่ – 70g (ได้ 6 ซอง)</p>
+                    <span class="product-price">฿ 156.00 บาท</span>
+                </div>
+                <div class="col-3 d-flex justify-content-end">
+                    <button type="button" class="btn btn-danger fontbut">สั่งซื้ออีกครั้ง <i class="bi bi-cart3"></i></button>
+                </div>
             </div>
-            <div class="container-fluid checkout">
-                <div class="total borfer-bottom">ราคาสินค้าทั้งหมด<br> ค่าจัดส่ง<br>ยอดรวมทั้งหมด</div>
-                <div class="total"> ฿ 336.00 <br> ฿ 30.00 <br>฿ 366.00</div>
-            </div> <br>
-            <a class="btn btn-warning btn-md w-100 mb-3" href="buy.html">
-                ยืนยันการสั่งสินค้า
-            </a>
+            
         </div>
     </div>
+    
+</div>
 
     <div class="container-fluid foott mt-5">
         <div class="container"><br>
@@ -168,8 +139,8 @@
               <ul class="nav flex-column">
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">หน้าหลัก</a></li>
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">สินค้า</a></li>
-                <li class="nav-item mb-2"><a href="howtobuy.html" class="nav-link p-0 text-muted">วิธีการซื้อสินค้า</a></li>
-                <li class="nav-item mb-2"><a href="About.html" class="nav-link p-0 text-muted">เกี่ยวกับเรา</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">วิธีการสั่งซื้อสินค้า</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">เกี่ยวกับเรา</a></li>
                 
               </ul>
             </div>

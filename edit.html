@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/shopping.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
       <a class="navbar-brand" href="#"><img class="logo" src="img/logo2.png" alt="รูปภาพโลโก้เว็บไซต์ Tail and Paw"></a>
       <div class="d-flex d-lg-none ms-auto align-items-center">
         <span class="d-flex me-4 iconphone" style="font-size: 1.25em;">
-          <a class="nav-link me-2" href="shopping.html"><i class="bi bi-cart3"></i></a>
+          <a class="nav-link me-2 " href="#" ><i class="bi bi-cart3"></i></a>
           <a class="nav-link me-1" href="#"><i class="bi bi-bell-fill"></i></a>
           <a class="nav-link ms-1" href="#"><i class="bi bi-person-fill"></i></a>
         </span>
@@ -31,24 +31,13 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">หน้าหลัก</a>
+            <a class="nav-link" href="index.html">หน้าหลัก</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">สินค้า</a>
 
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#">อาหาร และ ขนม</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">สำหรับสุนัข</a></li>
-                  <li><a class="dropdown-item" href="#">สำหรับสแมว</a></li>
-                  <li><a class="dropdown-item" href="#">สัตว์ชนิดอื่นๆ</a></li>
-                </ul>
-              </li>
-              <li><a class="dropdown-item" href="#">ผลิตภัณฑ์ดูแลขน</a></li>
-              <li><a class="dropdown-item" href="#">สินค้าอื่นๆ</a></li>
-            </ul>
+             
           </li>
           <li class="nav-item">
             <a class="nav-link" href="howtobuy.html">วิธีการสั่งซื้อสินค้า</a>
@@ -57,13 +46,13 @@
             <a class="nav-link" href="About.html">เกี่ยวกับเรา</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="Contack.html">ติดต่อเรา</a>
+            <a class="nav-link" href="Contack.html">ติดต่อเรา</a>
           </li>
         </ul>
 
         <ul class="navbar-nav ms-auto d-none d-lg-flex iconphone">
           <li class="nav-item ">
-            <a class="nav-link" style="font-size: 1.2em;" href="shopping.html"><i class="bi bi-cart3"></i></a>
+            <a class="nav-link" style="font-size: 1.2em;"  href="shopping.html"><i class="bi bi-cart3"></i></a>
           </li>
           <li class="nav-item"></li>
           <a class="nav-link me-1" style="font-size: 1.2em;" href="#"><i class="bi bi-bell-fill"></i></a>
@@ -77,44 +66,29 @@
     </div>
   </nav>
 
-  <div class="container-fluid mb-4"><br>
-   
+  <div class="container-fluid"><br>
     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item ms-2"><a class="linkb" href="index.html">หน้าหลัก</a></li>
-        <li class="breadcrumb-item active" aria-current="page">ตืดต่อเรา</li>
+        <li class="breadcrumb-item ms-1"><a class="linkb" href="index.html">ตะกร้าสินค้า</a></li>
+        <li class="breadcrumb-item ms-1"><a class="linkb" href="index.html">สั่งซื้อสินค้า</a></li>
+        <li class="breadcrumb-item active" aria-current="page">แก้ไขที่อยู่</li>
       </ol>
     </nav>
-    <div class="container mt-4">
-
-    <form action="POST">
-        <h3>ข้อความถึงเรา</h3>
-        <p>ชื่อ - สกุล</p>
-        <input class="form-control mb-2" placeholder="กรอกชื่อ-สกุล">
-        <p>หัวข้อเรื่อง</p>
-        <input class="form-control mb-2" placeholder="กรอกชื่อ-สกุล">
-        <label for="address" class="form-label">ข้อความ</label>
-        <textarea class="form-control mb-3" id="address" rows="3"
-        placeholder="กรอกข้อความที่ต้องการติดต่อเรา..."></textarea>
-
-        <a class="btn btn-warning btn-md w-100" href="Contack.html" onclick="sentcontact()">
-        ส่งข้อความ
-        </a><br><br>
-
-        <div class="contact2">
-            ช่องทางการติดต่ออื่นๆ<br>
-            <i class="bi bi-envelope mail"></i> Email : tailandpaw@gmail.com <br>
-            <i class="bi bi-telephone-fill phone"></i> Phone : 091 - 234 - 5678 <br>
-            <i class="bi bi-facebook Facebook"></i> Facebook : Tail&PawPetshop <br>
-            <i class="bi bi-instagram ig"></i> Instagrame : @tailandpaw <br>
-            <i class="bi bi-line iline"></i> Line ID : @tailandpaw
-          </div>
-    </form><br>
+    <div class="container-fluid  my-4">
+      <h4 class="mb-3">แก้ไขที่อยู่</h4>
+      <div class="box-container">
+        <p class="text-muted box">
+          บ้านเลขที่ 123 หมู่ 24 บ้านโนนม่วง ตำบลศิลา อำเภอเมืองขอนแก่น
+          จังหวัดขอนแก่น รหัสไปรษณีย์ 4000
+        </p>
+        <a href="editadd.html" class="btn-primary btn-edit"><i class="bi bi-pencil"></i></a>
+        <a class="btnadd text-center" href="add_address.html">เพิ่มที่อยู่ของคุณ <i class="bi bi-plus-circle"></i> </a>
+  
     </div>
-            
-         
+    </a><br><br>
+    </div>
   </div>
-
 
   <div class="container-fluid foott mt-5">
     <div class="container"><br>
@@ -131,7 +105,7 @@
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">หน้าหลัก</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">สินค้า</a></li>
             <li class="nav-item mb-2"><a href="howtobuy.html" class="nav-link p-0 text-muted">วิธีการสั่งซื้อสินค้า</a></li>
-            <li class="nav-item mb-2"><a href="About.html" class="nav-link p-0 text-muted">เกี่ยวกับเรา</a></li>
+            <li class="nav-item mb-2"><a href="Contack.html" class="nav-link p-0 text-muted">เกี่ยวกับเรา</a></li>
             
           </ul>
         </div>
@@ -156,6 +130,7 @@
       <p class="text-muted">© 2024 Company, Tail & Paw. All rights reserved.</p><br>
     </div>
   </div>  
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

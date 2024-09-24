@@ -18,10 +18,11 @@
             <a class="navbar-brand" href="#"><img class="logo" src="img/logo2.png"
                     alt="รูปภาพโลโก้เว็บไซต์ Tail and Paw"></a>
             <div class="d-flex d-lg-none ms-auto align-items-center ">
-                <span class="d-flex me-3 i iconphone">
-                    <a class="nav-link me-2" href="shopping.html"><i class="bi bi-cart3"></i></a>
-                    <a class="nav-link" href="login.html">เข้าสู่ระบบ</a>
-                </span>
+                <span class="d-flex me-4 iconphone" style="font-size: 1.25em;">
+                    <a class="nav-link me-2 " href="#" ><i class="bi bi-cart3"></i></a>
+                    <a class="nav-link me-1" href="#"><i class="bi bi-bell-fill"></i></a>
+                    <a class="nav-link ms-1" href="#"><i class="bi bi-person-fill"></i></a>
+                  </span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -62,13 +63,16 @@
                 </ul>
 
                 <ul class="navbar-nav ms-auto d-none d-lg-flex iconphone">
-                    <li class="nav-item">
-                        <a class="nav-link" href="shopping.html"><i class="bi bi-cart3"></i></a>
+                    <li class="nav-item ">
+                      <a class="nav-link" style="font-size: 1.2em;"  href="shopping.html"><i class="bi bi-cart3"></i></a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a class="nav-link me-1" style="font-size: 1.2em;" href="#"><i class="bi bi-bell-fill"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">เข้าสู่ระบบ</a>
+                      <a class="nav-link" style="font-size: 1.2em;" href="#"><i class="bi bi-person-fill"></i></a>
                     </li>
-                </ul>
+                  </ul>
 
             </div>
         </div>
@@ -77,34 +81,33 @@
     <div class="container-fluid">
 
         <div class="container mt-4">
-            <h3 class="mb-4">กรอกที่อยู่สำหรับการจัดส่ง</h3>
+            <h3 class="mb-4">แก้ไขที่อยู่</h3>
             <form>
                 <div class="row mb-3">
                     <div class="col-md-6 mb-2">
                         <label for="fullname" class="form-label">ชื่อ-นามสกุล</label>
-                        <input type="text" class="form-control" id="fullname" placeholder="กรอกชื่อ-นามสกุล">
+                        <input type="text" class="form-control" id="fullname" value="สุธินันท์ ลำลอง">
                     </div>
                     <div class="col-md-6">
                         <label for="phone" class="form-label">เบอร์โทรศัพท์</label>
-                        <input type="tel" class="form-control" id="phone" placeholder="กรอกเบอร์โทรศัพท์">
+                        <input type="tel" class="form-control" id="phone" value="0941985046">
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-12">
                         <label for="address" class="form-label">ที่อยู่</label>
-                        <textarea class="form-control" id="address" rows="3"
-                            placeholder="กรอกรายละเอียดที่อยู่"></textarea>
+                        <textarea class="form-control" id="address" rows="3">บ้านเลขที่ 123 หมู่ 24 บ้านโนนม่วง ตำบลศิลา อำเภอเมืองขอนแก่นจังหวัดขอนแก่น รหัสไปรษณีย์ 4000</textarea>
                     </div>
                 </div>
 
                 <div class="row mb-3">
                     <div class="col-md-4 mb-3">
                         <label for="subdistrict" class="form-label">ตำบล/แขวง</label>
-                        <input type="text" class="form-control" id="subdistrict" placeholder="กรอกตำบล/แขวง">
+                        <input type="text" class="form-control" id="subdistrict" value="ศิลา">
                     </div>
                     <div class="col-md-4 mb-3">
                         <label for="city" class="form-label">อำเภอ</label>
-                        <input type="text" class="form-control" id="city" placeholder="กรอกอำเภอ/เขต">
+                        <input type="text" class="form-control" id="city" value="อำเภอเมืองขอนแก่น">
                     </div>
                     <div class="col-md-4">
                         <label for="province" class="form-label">จังหวัด</label>
@@ -162,7 +165,7 @@
                                 <option>ตาก</option>
                             </optgroup>
                             <optgroup label="อีสาน">
-                                <option>ขอนแก่น</option>
+                                <option selected>ขอนแก่น</option>
                                 <option>ชัยภูมิ</option>
                                 <option>นครพนม</option>
                                 <option>นครราชสีมา</option>
@@ -198,7 +201,7 @@
                 <div class="row mb-3">
                     <div class="col-md-4">
                         <label for="zipcode" class="form-label">รหัสไปรษณีย์</label>
-                        <input type="text" class="form-control" id="zipcode" placeholder="กรอกรหัสไปรษณีย์">
+                        <input type="text" class="form-control" id="zipcode" value="4000">
                     </div>
                 </div>
                 <div class="row mb-3"></div>

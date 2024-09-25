@@ -125,3 +125,7 @@ body {
 .howtoimg{
   width: 80%;
 }
+
+.howto p{
+  font-size: 1.2em;
+}

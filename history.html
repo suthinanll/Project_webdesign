@@ -32,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">หน้าหลัก</a>
+                        <a class="nav-link" href="index.html">หน้าหลัก</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -55,19 +55,20 @@
                         <a class="nav-link" href="howtobuy.html">วิธีการสั่งซื้อสินค้า</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="About.html">เกี่ยวกับเรา</a>
+                        <a class="nav-link" href="about.html">เกี่ยวกับเรา</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Contack.html">ติดต่อเรา</a>
+                        <a class="nav-link" href="contack.html">ติดต่อเรา</a>
                     </li>
                 </ul>
 
                 <ul class="navbar-nav ms-auto d-none d-lg-flex iconphone">
                     <li class="nav-item ">
-                        <a class="nav-link" style="font-size: 1.2em;" href="shopping.html"><i class="bi bi-cart3"></i></a>
+                        <a class="nav-link" style="font-size: 1.2em;" href="shopping.html"><i
+                                class="bi bi-cart3"></i></a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link me-1" style="font-size: 1.2em;" href="#"><i class="bi bi-bell-fill"></i></a>
+                        <a class="nav-link me-1" style="font-size: 1.2em;" href="#"><i class="bi bi-bell-fill"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" style="font-size: 1.2em;" href="#"><i class="bi bi-person-fill"></i></a>
@@ -78,91 +79,120 @@
         </div>
     </nav>
     <div class="container-fluid my-4">
-        
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item ms-2"><a class="linkb" href="index.html">หน้าหลัก</a></li>
-          <li class="breadcrumb-item ms-1"><a class="linkb" href="Profile.html">บัญขีผู้ใช้</a></li>
-          <li class="breadcrumb-item active" aria-current="page">ประวัติการซื้อสินค้า</li>
-        </ol>
-      </nav>
+
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item ms-2"><a class="linkb" href="index.html">หน้าหลัก</a></li>
+                <li class="breadcrumb-item ms-1"><a class="linkb" href="profile.html">บัญขีผู้ใช้</a></li>
+                <li class="breadcrumb-item active" aria-current="page">ประวัติการซื้อสินค้า</li>
+            </ol>
+        </nav>
 
         <div class="container mt-4">
-            <h4>ประวัติการซื้อสินค้า</h4>
-    
+            <h4 class="text-center">ประวัติการซื้อสินค้า</h4>
+            <form action="search">
+                <!-- แถบค้นหา -->
+                <div class="search-bar d-flex mb-3">
+                    <select class="form-select me-2" aria-label="เลือกหมวดหมู่">
+                        <option selected>เลือกหมวดหมู่</option>
+                        <option value="1">อาหาร และ ขนม</option>
+                        <option value="2">ผลิตภัณฑ์ดูแลขน</option>
+                        <option value="3">สินค้าอื่นๆ</option>
+                    </select>
+        
+                    <input type="text" class="form-control me-1" placeholder="ค้นหารายการสินค้า...">
+        
+                    <button class="btn btn-success">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+        
+                <!-- ช่วงเวลา -->
+               
+                    <h5>ค้นหาตามช่วงเวลา</h5>
+                    <div class="date-range d-flex  mb-3 ">
+                        <input type="date" class="form-control me-2" id="startDate" value="2024-09-22">
+                        <span> - </span>
+                        <input type="date" class="form-control ms-2" id="endDate" value="2024-09-26">
+                    </div>
+               
+            </form>
+
             <div class="row align-items-center mb-3 product-card">
                 <div class="col-2">
                     <img src="img/p2.png" alt="product-image" class="img-fluid">
                 </div>
                 <div class="col-7">
-                    <p class="text-muted">จัดส่งสำเร็จ</p>
+                    <p class="text-muted">จัดส่งสำเร็จเมื่อวันที่ 24/09/2024 </p>
                     <p class="pdescription">Pedigree อาหารสูตร Simmered Beef Loaf with Vegetables<br>
-                    สูตรรสเนื้อตุ๋นผสมผัก – 130g</p>
+                        สูตรรสเนื้อตุ๋นผสมผัก – 130g</p>
                     <span class="product-price">฿ 24.00 บาท</span>
                 </div>
                 <div class="col-3 d-flex justify-content-end">
                     <button type="button" class="btn btn-danger ">สั่งซื้ออีกครั้ง <i class="bi bi-cart3"></i></button>
                 </div>
             </div>
-    
+
             <div class="row align-items-center mb-3 product-card">
                 <div class="col-2">
                     <img src="img/p2.jpg" alt="product-image" class="img-fluid">
                 </div>
                 <div class="col-7">
-                    <p class="text-muted">จัดส่งสำเร็จ</p>
+                    <p class="text-muted">จัดส่งสำเร็จเมื่อวันที่ 27/09/2024 </p>
                     <p class="pdescription">Petsimo เพ็ทซิโม อาหารสุขภาพแบบเปียก<br>
-                    สูตรไก่บ้านเนื้อวัวในเยลลี่ – 70g (ได้ 6 ซอง)</p>
+                        สูตรไก่บ้านเนื้อวัวในเยลลี่ – 70g (ได้ 6 ซอง)</p>
                     <span class="product-price">฿ 156.00 บาท</span>
                 </div>
                 <div class="col-3 d-flex justify-content-end">
-                    <button type="button" class="btn btn-danger fontbut">สั่งซื้ออีกครั้ง <i class="bi bi-cart3"></i></button>
+                    <button type="button" class="btn btn-danger fontbut">สั่งซื้ออีกครั้ง <i
+                            class="bi bi-cart3"></i></button>
                 </div>
             </div>
-            
+
         </div>
     </div>
-    
+
     <div class="container-fluid foott mt-5">
         <div class="container"><br>
-          <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-2 my-1 mt-4">
-            <div class="col mb-3 "><br>
-            <img class="imgfooter" src="img/logo2.png" alt="รูปภาพโลโก้เว็บไซต์">
-            </div>
-      
-            <div class="col mb-3">
-            </div>
-      
-            <div class="col mb-3">
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">หน้าหลัก</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">สินค้า</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">วิธีการสั่งซื้อสินค้า</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">เกี่ยวกับเรา</a></li>
-                
-              </ul>
-            </div>
-      
-            <div class="col mb-3">
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="shopping.html" class="nav-link p-0 text-muted">ตะกร้าสินค้า</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">สินค้าที่ถูกใจ</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">กล่องข้อความ</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">บัญขีผู้ใช้</a></li>
-              </ul>
-            </div>
-      
-            <div class="col mb-3 btncontact">
-              <h5>ติดต่อเรา</h5>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-line"></i></a>
-              <a href="#"><i class="bi bi-envelope"></i></a>
-            </div>
-          </footer>
-          <p class="text-muted">© 2024 Company, Tail & Paw. All rights reserved.</p><br>
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-2 my-1 mt-4">
+                <div class="col mb-3 "><br>
+                    <img class="imgfooter" src="img/logo2.png" alt="รูปภาพโลโก้เว็บไซต์">
+                </div>
+
+                <div class="col mb-3">
+                </div>
+
+                <div class="col mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">หน้าหลัก</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">สินค้า</a></li>
+                        <li class="nav-item mb-2"><a href="howtobuy.html" class="nav-link p-0 text-muted">วิธีการสั่งซื้อสินค้า</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">เกี่ยวกับเรา</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="shopping.html"class="nav-link p-0 text-muted">ตะกร้าสินค้า</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">สินค้าที่ถูกใจ</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">กล่องข้อความ</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">บัญขีผู้ใช้</a></li>
+                    </ul>
+                </div>
+
+                <div class="col mb-3 btncontact">
+                    <h5>ติดต่อเรา</h5>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-line"></i></a>
+                    <a href="#"><i class="bi bi-envelope"></i></a>
+                </div>
+            </footer>
+            <p class="text-muted">© 2024 Company, Tail & Paw. All rights reserved.</p><br>
         </div>
-      </div>  
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -42,7 +42,7 @@ body {
     display: block;
   }
   .navbar{
-    background-color: #fff9a0;
+    background-color: var(--footet_header-color);
   }
   .imgfooter{
     width: 12em;
@@ -76,6 +76,7 @@ body {
     color: #ffffff;
   }
   .cart-table tbody td {
+    width: 100%;
     border: none;
     padding: 15px;
     vertical-align: middle;
@@ -262,3 +263,24 @@ body {
  .btnadd:hover{
   background-color: rgb(243, 243, 243);
  }
+
+ .search-bar {
+ width: 100%;
+}
+.search-bar button{
+  border: none;
+}
+
+.search-bar select,
+.search-bar input,
+.search-bar button {
+  height: 45px; /* ความสูงขององค์ประกอบทั้งหมด */
+}
+.search-bar select{
+  width: 175px;
+}
+
+.search-bar, .date-range {
+  width: 100%;
+}
+

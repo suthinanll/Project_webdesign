@@ -8,119 +8,199 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="./css/home.css">
 </head>
 <style>
+  body{
+    background-color: whitesmoke;
+  }
+  
+  #card{
+   padding: 0px 80px;
+  }
+  .section-product{
+    margin-top: 30px;
+    border: 1px solid ;
+    text-align: center;
+    padding: 20px 0px;
 
-.nav-item {
-            position: relative;
+  }
+
+.section-heading{
+    background-color: white;
+    padding: 10px ;
+    width: 90%;
+    margin: 30px auto 15px auto;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom:5px solid #9C480C ;
+
+}
+
+.shop-button{
+  border: none;
+  background-color: #FFB719;
+  color: white;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 5px 30px;
+  margin: 30px  10px 0 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0,0.2);
+  
+
+}
+
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
         }
-        .nav-item:hover .dropdown {
-            display: block;
+
+        
+        .icon-circle {
+            width: 150px;
+            height: 150px;
+            background-color: #f9cc5b; 
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
         }
-        .dropdown {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: -100px;
-            z-index: 1000;
+
+        
+        .icon-item {
+            text-align: center;
         }
-        .nav-link {
-            cursor: pointer;
+
+    
+        .icon-circle img {
+            width: 50px; 
+            height: auto;
         }
-        .dropdown-toggle::after {
-            display: none;
+        .catagory{
+          width: 90%;
+          padding: 30px 0;
+          margin: 0 auto 30px auto;
+          
         }
+        .price-product{
+          color: #FC5B00;
+        }
+        #search-button{
+          border: none;
+          background-color: #FFB719;
+          color: white;
+          border-radius: 0 5px 3px 0;
+          padding: 0 20px 0 20px;
+        }
+        .input-group{
+          margin-top: 20px;
+      }
+        .form-control{
+          padding: 30px 15px;
+          
+        }
+        .btn{
+          background-color: #FFB719;
+          color: white;
+          border: none;
+          border-radius: 100px;
+          float: right;
+   
+}
+.btn:hover{
+  background-color: #FFA500;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+        
+
+      
 </style>
 <body>
   <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid ms-2 me-2">
-        <a class="navbar-brand" href="#"><img class="logo" src="img/logo2.png"
-                alt="รูปภาพโลโก้เว็บไซต์ Tail and Paw"></a>
-        <div class="d-flex d-lg-none ms-auto align-items-center">
-            <span class="d-flex me-4 iconphone" style="font-size: 1.25em;">
-                <a class="nav-link me-2" href="shopping.html"><i class="bi bi-cart3"></i></a>
-                <a class="nav-link me-1" href="#"><i class="bi bi-bell-fill"></i></a>
-                <a class="nav-link ms-1" href="#"><i class="bi bi-person-fill"></i></a>
-            </span>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
+      <a class="navbar-brand" href="#"><img class="logo" src="img/logo2.png" alt="รูปภาพโลโก้เว็บไซต์ Tail and Paw"></a>
+      <div class="d-flex d-lg-none ms-auto align-items-center">
+        <span class="d-flex me-4 iconphone" style="font-size: 1.25em;">
+          <a class="nav-link me-2" href="shopping.html"><i class="bi bi-cart3"></i></a>
+          <a class="nav-link me-1" href="#"><i class="bi bi-bell-fill"></i></a>
+          <a class="nav-link ms-1" href="#"><i class="bi bi-person-fill"></i></a>
+        </span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
 
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">หน้าหลัก</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">สินค้า</a>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">หน้าหลัก</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">สินค้า</a>
 
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li class="dropdown-submenu">
-                            <a class="dropdown-item dropdown-toggle" href="#">อาหาร และ ขนม</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">สำหรับสุนัข</a></li>
-                                <li><a class="dropdown-item" href="#">สำหรับสแมว</a></li>
-                                <li><a class="dropdown-item" href="#">สัตว์ชนิดอื่นๆ</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="#">ผลิตภัณฑ์ดูแลขน</a></li>
-                        <li><a class="dropdown-item" href="#">สินค้าอื่นๆ</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="howtobuy.html">วิธีการสั่งซื้อสินค้า</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="About.html">เกี่ยวกับเรา</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Contack.html">ติดต่อเรา</a>
-                </li>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">อาหาร และ ขนม</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">สำหรับสุนัข</a></li>
+                  <li><a class="dropdown-item" href="#">สำหรับสแมว</a></li>
+                  <li><a class="dropdown-item" href="#">สัตว์ชนิดอื่นๆ</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="#">ผลิตภัณฑ์ดูแลขน</a></li>
+              <li><a class="dropdown-item" href="#">สินค้าอื่นๆ</a></li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active href="howtobuy.html">วิธีการสั่งซื้อสินค้า</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">เกี่ยวกับเรา</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contack.html">ติดต่อเรา</a>
+          </li>
+        </ul>
 
-            <ul class="navbar-nav ms-auto d-none d-lg-flex iconphone">
-                <li class="nav-item ">
-                    <a class="nav-link" style="font-size: 1.2em;" href="shopping.html"><i class="bi bi-cart3"></i></a>
-                </li>
-                <li class="nav-item"></li>
-                <a class="nav-link me-1" style="font-size: 1.2em;" href="#"><i class="bi bi-bell-fill"></i></a>
-                </li>
-            
-                  <ul class="nav">
-                      <li class="nav-item">
-                          <a class="nav-link" href="#" onclick="return false;">
-                              <i class="bi bi-person-fill"></i>
-                          </a>
-                          <div class="dropdown">
-                              <ul class="dropdown-menu show">
-                                  <li><a class="dropdown-item" href="#">บัญชีผู้ใช้</a></li>
-                                  <li><a class="dropdown-item" href="#">สินค้าที่ถูกใจ</a></li>
-                                  <li><a class="dropdown-item" href="#">ประวัติการสั่งซื้อ</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item text-danger" href="login.html">ออกจากระบบ</a></li>
-                              </ul>
-                          </div>
-                      </li>
-                  </ul>
-            
-                   
+        <ul class="navbar-nav ms-auto d-none d-lg-flex iconphone ">
+          <li class="nav-item ">
+            <a class="nav-link " style="font-size: 1.2em;" href="shopping.html"><i class="bi bi-cart3"></i></a>
+          </li>
+          <li class="nav-item"></li>
+          <a class="nav-link me-1" style="font-size: 1.2em;" href="#"><i class="bi bi-bell-fill"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: 1.2em;" href="#"><i class="bi bi-person-fill"></i></a>
+          </li>
+        </ul>
 
-                    
-                </li>
-            </ul>
-
-        </div>
+      </div>
     </div>
-</nav>
+  </nav>
 
-  <div class="form">
-  <form action="">
-    <input  type="text" name="search" id="search"  >
-  </form>
+
+
+  <div >
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col-12 mb-3">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="ค้นหา..." aria-label="Search">
+            <button id="search-button" type="button">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -133,6 +213,11 @@
         <img class="d-block w-100" src="img/โปรโมชั่น 1 แถม 1! 1.png" alt="Third image slide">
       </div>
     </div>
+
+    <div class="section-heading"><p>สินค้าขายดี</p></div>
+
+
+
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
@@ -142,103 +227,220 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <div class="section-heading"><p>สินค้าขายดี</p></div>
-</div>
-<div class="container my-5">
-  <div class="row row-cols-1 row-cols-md-4 g-4">
-    <div class="col">
+
+
+  <div class="container-fluid my-5" id="card" >
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
+    <div class="col-6 col-md-4 col-lg-3 mb-2">
       <div class="card h-100">
-        <img src="img/p2.png" class="card-img-top" alt="รูปภาพสินค้า">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card </p>
-          <button type="button" class="btn">Base class</button>
-          <h3>฿250</h3>
+        <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-end">
+            <h3 class="price-product">฿250</h3>
+            <button type="button" class="btn">เพิ่มลงตระกร้า</button>
+          </div>
         </div>
       </div>
     </div>
-    
-    <div class="col">
+    <div class="col-6 col-md-4 col-lg-3 mb-2">
       <div class="card h-100">
-        <img src="img/p2.png" class="card-img-top" alt="รูปภาพสินค้า">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <button type="button" class="btn">Base class</button>
-          <h3>฿250</h3>
+        <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-end">
+            <h3 class="price-product">฿250</h3>
+            <button type="button" class="btn">เพิ่มลงตระกร้า</button>
+          </div>
         </div>
       </div>
     </div>
-    
-    <div class="col">
+    <div class="col-6 col-md-4 col-lg-3 mb-2">
       <div class="card h-100">
-        <img src="img/p2.png" class="card-img-top" alt="รูปภาพสินค้า">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card w</p>
-          
-          <button type="button" class="btn">Base class</button>
-          <h3>฿250</h3>
+        <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-end">
+            <h3 class="price-product">฿250</h3>
+            <button type="button" class="btn">เพิ่มลงตระกร้า</button>
+          </div>
         </div>
       </div>
     </div>
-    
-    
-    <div class="col">
+    <div class="col-6 col-md-4 col-lg-3 mb-2">
       <div class="card h-100">
-        <img src="img/p2.png" class="card-img-top" alt="รูปภาพสินค้า">
-        <div class="card-body">
-          <h5 class="card-title">New Card Title</h5>
-          <p class="card-text">This is the content of </p>
-          <button type="button" class="btn">Base class</button>
-          <h3>฿250</h3>
+        <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title">New Card Title</h5>
+            <p class="card-text">This is the content of</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-end">
+            <h3 class="price-product">฿250</h3>
+            <button type="button" class="btn">เพิ่มลงตระกร้า</button>
+          </div>
         </div>
-       
       </div>
     </div>
-    
   </div>
 </div>
 
-   
-</div>
-<div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card mb-3">
-          <div class="row g-0">
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-              </div>
+
+  
+
+
+  
+
+<div class="container-fluid" id="card">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="card mb-3 h-100">
+        <div class="row g-0 h-100">
+          <div class="col-8 col-md-8 d-flex flex-column justify-content-between">
+            <div class="card-body">
+              
+              <h1 class="card-text">ลดรับซัมเมอร์</h1>
+              <h5 class="card-title">ช็อปสนุก ลดทุกชิ้น 50%</h5>
+
+              <button class="shop-button">ช็อปเลย</button>
+
             </div>
-            <div class="col-md-4">
-              <img src="img/dog.png" class="img-fluid rounded-start" alt="รูปภาพสุนัข" width="140px">
-            </div>
+          </div>
+          <div class="col-4 d-md-none d-flex align-items-center">
+            <img src="img/dog.png" class="img-fluid rounded-start" alt="รูปภาพสุนัข" width="140px">
+          </div>
+          <div class="col-md-4 d-none d-md-flex align-items-center">
+            <img src="img/dog.png" class="img-fluid rounded-start" alt="รูปภาพสุนัข" width="140px">
           </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="card mb-3">
-          <div class="row g-0">
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-              </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="card mb-3 h-100">
+        <div class="row g-0 h-100">
+          <div class="col-8 col-md-8 d-flex flex-column justify-content-between">
+            <div class="card-body">
+              <h1 class="card-text">ลดรับซัมเมอร์</h1>
+              <h5 class="card-title">ช็อปสนุก ลดทุกชิ้น 50%</h5>
+
+              <button class="shop-button">ช็อปเลย</button>
             </div>
-            <div class="col-md-4">
-              <img src="img/cat (2).png" class="img-fluid rounded-start" alt="รูปภาพแมว" width="150px">
-            </div>
+          </div>
+          <div class="col-4 d-md-none d-flex align-items-center">
+            <img src="img/cat (2).png" class="img-fluid rounded-start" alt="รูปภาพแมว" width="150px">
+          </div>
+          <div class="col-md-4 d-none d-md-flex align-items-center">
+            <img src="img/cat (2).png" class="img-fluid rounded-start" alt="รูปภาพแมว" width="150px">
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+<div class="section-heading"><p>สินค้าลดราคา</p></div>
+
+
+<div class="container-fluid my-5" id="card">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
+    <div class="col-6 col-md-4 col-lg-3 mb-2">
+      <div class="card h-100">
+        <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-end">
+            <h3 class="price-product">฿250</h3>
+            <button type="button" class="btn">เพิ่มลงตระกร้า</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3 mb-2">
+      <div class="card h-100">
+        <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-end">
+            <h3 class="price-product">฿250</h3>
+            <button type="button" class="btn">เพิ่มลงตระกร้า</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3 mb-2">
+      <div class="card h-100">
+        <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-end">
+            <h3 class="price-product">฿250</h3>
+            <button type="button" class="btn">เพิ่มลงตระกร้า</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3 mb-2">
+      <div class="card h-100">
+        <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="card-title">New Card Title</h5>
+            <p class="card-text">This is the content of</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-end">
+            <h3 class="price-product">฿250</h3>
+            <button type="button" class="btn">เพิ่มลงตระกร้า</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-heading"><p> หมวดหมู่สินค้า</p></div>
+
+<div class="catagory">
+  <div class="icon-container">
+    <div class="icon-item">
+        <div class="icon-circle">
+            <img src="img/icon-for-food.png" alt="icon รูปอาหาร" style="width: 120px;">
+        </div>
+        <p>อาหาร</p>
+    </div>
+    <div class="icon-item">
+        <div class="icon-circle">
+            <img src="img/icon-for-toy.png" alt="icon รูปของเล่น" style="width: 120px;">
+        </div>
+        <p>ของเล่น</p>
+    </div>
+    <div class="icon-item">
+        <div class="icon-circle">
+            <img src="img/icon-for-haircare.png" alt="icon " style="width: 120px;">
+        </div>
+        <p>ผลิตภัณฑ์ดูแลขน</p>
+    </div>
+  </div>
+</div>
   
+
   
   
 
@@ -283,7 +485,30 @@
       <p class="text-muted">© 2024 Company, Tail & Paw. All rights reserved.</p><br>
     </div>
   </div>
+
+
   
+  <script>
+   
+
+// Get the search input and button elements
+const searchInput = document.querySelector('.form-control');
+const searchButton = document.querySelector('.btn-primary');
+
+// Add event listener to the search button
+searchButton.addEventListener('click', () => {
+  const searchTerm = searchInput.value.trim();
+  if (searchTerm) {
+    performSearch(searchTerm);
+  }
+});
+
+function performSearch(term) {
+  // Call your search function or API here
+  console.log(`Searching for: ${term}`);
+  // Implement your search logic here
+}
+  </script>
 
       
       

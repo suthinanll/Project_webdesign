@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* css หลักใช้ทุกๆหน้า */
+:root {
+   --footet_header-color: rgb(255, 245, 158);
+   --button-color:#FFB719;
+}
+
+
+body {
+    max-width: 1980px;      
+    min-width: 320px;
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: kanit;
+    background-color: whitesmoke;
+  }
+  .nav-link{
+    color: rgba(0, 0, 0, 0.65);
+  }
+  .nav-link:hover{
+    color: rgb(0, 0, 0);
+  }
+  .navbar{
+   background-color: var(--footet_header-color);
+  }
+  .logo {
+    width: 4em;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+  }
+
+  .dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu .dropdown-menu {
+    left: 100%;
+    top: 0;
+    margin-left: 0;
+    display: none;
+  }
+
+  .dropdown-submenu:hover .dropdown-menu {
+    display: block;
+  }
+  .foott{
+   background-color: var(--footet_header-color);
+  }
+
+
+ /*search bar*/
+ #search-button {
+    border: none;
+    background-color: #FFB719;
+    color: white;
+    border-radius: 0 5px 3px 0;
+    padding: 0 20px;
+}
+.input-group {
+    margin-top: 20px;
+}
+
+.form-control {
+    padding: 20px 15px;
+}
+.all-content{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    padding: 1.5em 0 1.5em 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*รายละเอียดชื่อและราคา*/
+.text-dangerr{
+    color: #FC5B00;
+    font-size: 3em;
+}
+.btn{
+    margin:2em;
+}
+.btn-lg {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-image { 
+    max-width: 50%; 
+    height: auto; 
+    cursor: pointer; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.heart-icon { 
+    font-size: 1.5rem; 
+    color: #dc3545; 
+}
+.carousel-thumbnail { 
+    width: 60px; 
+    height: 60px; 
+    object-fit: cover; 
+    cursor: pointer; }
+.section-detail{ 
+     margin: 0.5em 0; 
+    }
+  #product-details,#product-reviews{
+  margin: 20px;
+
+}
+#container-sectionn {
+  background-color: white;
+  padding: 1px 0 10px 0;
+  margin-top: 10px;
+}
+#container-search{
+  padding: 0 2px;
+}
+
+
+
+.img{
+    border-radius: 100%;
+    height: 3.2em;
+    margin: 0 1em 3.5em;
+}
+
+.navbar-toggler{
+  border: 1px solid rgb(0, 0, 0 ,0.20);
+}

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root {
+/* :root {
     --footet_header-color: rgb(255, 245, 158);
     --botton-color: #FFB719;
 }
@@ -46,10 +46,10 @@ body {
 
 .dropdown-submenu:hover .dropdown-menu {
     display: block;
-}
+} */
 
 /* Footer */
-.foott {
+/* .foott {
     background-color: var(--footet_header-color);
 }
 
@@ -75,7 +75,7 @@ body {
 
 .btncontact a:hover {
     color: black;
-}
+} */
 
 
 #search-button {
@@ -146,7 +146,7 @@ footer {
     color: white;
     border: none;
     border-radius: 50px;
-    padding: 0.5em 0.9375em; /* Already converted */
+    padding: 0.5em 0.9375em; 
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s; /* Add transition for hover */
 }

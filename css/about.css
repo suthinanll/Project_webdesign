@@ -11,7 +11,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: kanit;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(221, 221, 221);
   }
   .navbar{
    background-color: var(--footet_header-color);
@@ -59,20 +59,116 @@ body {
     margin: 15px 10px;
  }
 
+.iconphone a {
+  color: rgb(117, 117, 117);
+}
 
-/* neeuodate */
+.iconphone a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* ใช้ทุกนห้า */
 
 
+ /* login */
+ .login{
+    background-color: white;
+    padding: 2em;
+    width: 100%;
+    margin: 1em auto;
+    max-width: 450px; 
+    margin: 1em auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    text-align: center;
+    min-height: 100vh;
+ }
+ .loginlogo {
+    width: 60%;
+ }
+ form {
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+/* ปุ่มเข้าสู่ระบบ */
+.btnform {
+    width: 100%;
+    background-color: var(--botton-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px; 
+}
+.btnform:hover{
+   background-color: #ffae00;
+}
+
+
+.fgp {
+    display: block;
+    text-align: right; 
+    margin-top: -5px; 
+    margin-bottom: .7em;
+    text-decoration: none;
+    color: black;
+}
+.fgp:hover{
+   text-decoration: underline;
+}
+
+
+ .etc{
+    text-align: left;
+ }
+ .etc a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+ }
+
+
+ .loginetc{
+    padding: .5em;
+    border: 1px solid rgb(199, 199, 199);
+ }
+ .loginetc:hover{
+   background-color: rgb(230, 230, 230);
+ }
+
+ /* ปุ่มไปหน้าสมัครสมาชิก */
+.regisbtn{
+   color: rgb(253, 122, 0);
+   text-decoration: none;
+   font-weight:bold ;
+}
+.regisbtn:hover{
+   text-decoration: underline;
+}
+.imgfooter{
+   width: 12em;
+}
+.foot{
+   background-color: white;
+   margin-top: 1.5em;
+   padding: 1em;
+}
 .btncontact{
-  font-size: 1.4em;
-  word-spacing: .2em;
+   font-size: 1.4em;
+   word-spacing: .2em;
 }
 .btncontact a{
-  color: rgb(48, 48, 48);
+   color: rgb(48, 48, 48);
 }
 .btncontact a:hover{
-  color: black;
+   color: black;
 }
+/* จบที่นี่ */
 
 th {
     background-color: rgb(235, 235, 235);

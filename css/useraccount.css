@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* css หลักใช้ทุกๆหน้า */
+:root {
+    --footet_header-color: rgb(255, 245, 158);
+    --botton-color:#FFB719;
+  }
+  @media screen and (max-width: 574px) {
+    .bi-person-fill,.bi-cart3,.bi-bell-fill{
+      color: rgb(0, 0, 0 ,0.60);
+   
+    }
+}
+
+body {
+    max-width: 1980px;
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: kanit;
+    background-color: whitesmoke;
+}
+
+.logo {
+    width: 4em;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    left: 100%;
+    top: 0;
+    margin-left: 0;
+    display: none;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar {
+    background-color: var(--footet_header-color);
+}
+
+.imgfooter {
+    width: 12em;
+}
+
+.foott {
+    background-color: var(--footet_header-color);
+}
+.btncontact{
+    font-size: 1.4em;
+    word-spacing: .2em;
+ }
+ .btncontact a{
+    color: rgb(48, 48, 48);
+ }
+ .btncontact a:hover{
+    color: black;
+ }
+
+
+ .container{
+    margin-bottom: 50px;
+ }
+
+.file-upload{
+  display: none;
+  margin-top: 20px;
+  
+}
+.custom-file-upload {
+      display: inline-block;
+      margin: 20px 0 10px 5px;
+      padding: 5px 10px;
+      border: 1px solid rgba(0, 0, 0, 0.116);
+      cursor: pointer;
+      font-size: 12px;
+      border-radius: 3px;
+      }
+  .img{
+      background-color: violet;
+      border-radius: 100px;
+      height: 80px;
+      width: 80px;
+  }
+  .m{
+      
+  }
+  .name{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  .user-name{
+    font-size: 15px;
+    margin: 0px;
+    line-height: 20px;
+  }
+  .user-info{
+    margin: 30px 0 0 30px;
+  }
+  .container{
+    padding: 10px;
+  }
+   p{
+    font-size: 20px;
+    margin-top:20px ;
+    line-height: 50px;
+    
+  }
+  .btn {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    padding: 10px 30px 10px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #FFB719;
+  }
+  .btn:hover{
+    background-color: #f9aa01;
+
+  }
+  .btn a{
+    text-decoration: none;
+    color: black;
+  }
+  .span{
+    border: 1px solid black;
+    padding: 2px 30% 0 10px;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.form-control-plaintext {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 0.5rem;
+    
+}
+

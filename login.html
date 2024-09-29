@@ -72,9 +72,15 @@
       </div>
     </div>
   </nav>
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+  </nav>
 
   <div class="container-fluid login mt-5 mb-5">
-    <img class="loginlogo" src="img/logo2.png" alt="รูปภาพโลโก้เว็บไซต์">
+    <img  class="loginlogo" src="img/logo2.png" alt="รูปภาพโลโก้เว็บไซต์" >
     <p>เข้าสู่ระบบ</p>
     <form action="GET">
       <p><label>ชื่อผู้ใช้ / อีเมล</label></p>
@@ -82,7 +88,7 @@
       <p><label>รหัสผ่าน</label></p>
       <input type="password" class="form-control" placeholder="กรอกรหัสผ่าน">
       <a href="forgetpassword.html" class="fgp">ลืมรหัสผ่าน?</a>
-      <button class="btnform" type="submit">เข้าสู่ระบบ</button>
+      <button class="btnform" type="button" onclick="location.href='./index.html';">เข้าสู่ระบบ</button>
     </form>
     <div class="line-text">
       <hr>

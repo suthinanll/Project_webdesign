@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tail & Paw</title>
+  <title>Tail & Paw - วิธีการสั่งซื้อสินค้า</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -13,7 +13,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg ">
+  <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid ms-2 me-2">
       <a class="navbar-brand" href="#"><img class="logo" src="img/logo2.png" alt="รูปภาพโลโก้เว็บไซต์ Tail and Paw"></a>
       <div class="d-flex d-lg-none ms-auto align-items-center">
@@ -31,7 +31,7 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#">หน้าหลัก</a>
+            <a class="nav-link " aria-current="page" href="index.html">หน้าหลัก</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -51,13 +51,13 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active href="howtobuy.html">วิธีการสั่งซื้อสินค้า</a>
+            <a class="nav-link active" href="howtobuy.html">วิธีการสั่งซื้อสินค้า</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="About.html">เกี่ยวกับเรา</a>
+            <a class="nav-link" href="about.html">เกี่ยวกับเรา</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Contack.html">ติดต่อเรา</a>
+            <a class="nav-link" href="contack.html">ติดต่อเรา</a>
           </li>
         </ul>
 
@@ -65,11 +65,11 @@
           <li class="nav-item ">
             <a class="nav-link " style="font-size: 1.2em;" href="shopping.html"><i class="bi bi-cart3"></i></a>
           </li>
-          <li class="nav-item"></li>
-          <a class="nav-link me-1" style="font-size: 1.2em;" href="#"><i class="bi bi-bell-fill"></i></a>
+          <li class="nav-item">
+          <a class="nav-link me-1" style="font-size: 1.2em;" href="notification.html"><i class="bi bi-bell-fill"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-size: 1.2em;" href="#"><i class="bi bi-person-fill"></i></a>
+            <a class="nav-link" style="font-size: 1.2em;" href="useraccount.html"><i class="bi bi-person-fill"></i></a>
           </li>
         </ul>
 
@@ -85,17 +85,35 @@
         <li class="breadcrumb-item active" aria-current="page">วิธีการสั่งซื้แสินค้า</li>
       </ol>
     </nav>
-    <div class="container-fluid mt-4">
-        <h3>วิธีการสั่งซื้อสินค้า</h3>
-        <p>1.เพิ่มสินค้าที่ต้องการลงในตะกร้าสินค้า</p>
-        <img src="img/b1.png" alt="รูปภาพตอนการสั่งซื้อขั้นตอนที่ 1" width="90%">
-        <p>2.เข็ครายละเอียดสินค้าที่เลือก และ กดเลือกดำเนินการสั่งซื้อสินค้า</p>
-        <img src="img/b2.png" alt="รูปภาพตอนการสั่งซื้อขั้นตอนที่ 2" width="90%">
-        <p>3.เลือกวิธีการจัดส่ง และ วิธีการชำระเงิน จากนั้นกดยินยันสั่งสินค้า</p>
-        <img src="img/b3.png" alt="รูปภาพตอนการสั่งซื้อขั้นตอนที่ 2" width="90%">
-        <p>4.กรอกข้อมูลการแจ้งชำระเงิน จากนั้นกดยินยันการชำระเงิน</p>
-        <img src="img/b4.png" alt="รูปภาพตอนการสั่งซื้อขั้นตอนที่ 2" width="90%">
-    </div><br><br>
+    <div class="container mt-4 howto">
+      <h3 class="mb-4">วิธีการสั่งซื้อสินค้า</h3>
+      
+      <div class="row mb-4">
+          <div class="col-12">
+              <p>1.เพิ่มสินค้าที่ต้องการลงในตะกร้าสินค้า</p>
+              <img class="img-fluid howtoimg" src="img/b1.png" alt="รูปภาพตอนการสั่งซื้อขั้นตอนที่ 1">
+          </div>
+      </div>
+      <div class="row mb-4">
+          <div class="col-12">
+              <p>2.เช็ครายละเอียดสินค้าที่เลือก และ กดเลือกดำเนินการสั่งซื้อสินค้า</p>
+              <img class="img-fluid howtoimg" src="img/b2.png" alt="รูปภาพตอนการสั่งซื้อขั้นตอนที่ 2">
+          </div>
+      </div>      
+      <div class="row mb-4">
+          <div class="col-12">
+              <p>3.เลือกวิธีการจัดส่ง และ วิธีการชำระเงิน จากนั้นกดยินยันสั่งสินค้า</p>
+              <img class="img-fluid howtoimg" src="img/b3.png" alt="รูปภาพตอนการสั่งซื้อขั้นตอนที่ 3">
+          </div>
+      </div>      
+      <div class="row mb-4">
+          <div class="col-12">
+              <p>4.กรอกข้อมูลการแจ้งชำระเงิน จากนั้นกดยินยันการชำระเงิน</p>
+              <img class="img-fluid howtoimg" src="img/b4.png" alt="รูปภาพตอนการสั่งซื้อขั้นตอนที่ 4">
+          </div>
+      </div>
+  </div>
+  
             
          
   </div>
@@ -116,7 +134,7 @@
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">หน้าหลัก</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">สินค้า</a></li>
             <li class="nav-item mb-2"><a href="howtobuy.html" class="nav-link p-0 text-muted">วิธีการสั่งซื้อสินค้า</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">เกี่ยวกับเรา</a></li>
+            <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-muted">เกี่ยวกับเรา</a></li>
             
           </ul>
         </div>
@@ -132,10 +150,10 @@
   
         <div class="col mb-3 btncontact">
           <h5>ติดต่อเรา</h5>
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-line"></i></a>
-          <a href="#"><i class="bi bi-envelope"></i></a>
+          <a href="https://www.facebook.com/share/ppZ2JChzBdD3PbmE/?mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/tongyotmanut?igsh=MXFhOGNqdjh1a3Y1cA%3D%3D&utm_source=qr          "><i class="bi bi-instagram"></i></a>
+          <a href="https://line.me/ti/p/CVl49v8n8r"><i class="bi bi-line"></i></a>
+          <a href="mailto:suthinan.l@kkumail.com"><i class="bi bi-envelope"></i></a>
         </div>
       </footer>
       <p class="text-muted">© 2024 Company, Tail & Paw. All rights reserved.</p><br>

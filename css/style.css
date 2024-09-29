@@ -113,12 +113,18 @@ body {
   }
   .linkb:hover{
     text-decoration: underline;
-  }
-  .iconphone a {
+}
+.iconphone a {
     color: rgb(117, 117, 117);
 }
 
 .iconphone a:hover {
     color: rgb(0, 0, 0);
 }
+.howtoimg{
+  width: 80%;
+}
 
+.howto p{
+  font-size: 1.2em;
+}

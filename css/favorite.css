@@ -11,7 +11,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: kanit;
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(255, 255, 255);
   }
   .navbar{
    background-color: var(--footet_header-color);
@@ -59,9 +59,29 @@ body {
     margin: 15px 10px;
  }
 
-    .img-fluid {
-    margin-top: 2em;
+.iconphone a {
+  color: rgb(117, 117, 117);
 }
+
+.iconphone a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.btncontact{
+    font-size: 1.4em;
+    word-spacing: .2em;
+  }
+  .btncontact a{
+    color: rgb(48, 48, 48);
+  }
+  .btncontact a:hover{
+    color: black;
+  }
+
+
+  /* end */
+
+
 
 .heart-icon {
     color: #ff4d4d;
@@ -87,6 +107,7 @@ body {
     color: #000;
     
 }
+
 
 .product-price {
     font-size: 20px;
@@ -137,6 +158,14 @@ body {
     }
   }
   
+  .iconphone a {
+    color: rgb(117, 117, 117); /* กำหนดสีหรือสไตล์อื่น ๆ */
+}
+
+.iconphone a:hover {
+    color: rgb(0, 0, 0);
+}
+
 
 
         

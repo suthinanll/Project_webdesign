@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tail & Paw</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/navandfoot.css">
   <link rel="stylesheet" href="./css/reveiw.css">
+    
 </head>
 <style>
     
@@ -21,10 +23,12 @@
             margin-left: auto;
             
         }
+    
+    
 
 </style>
 <body>
-  <nav class="navbar navbar-expand-lg sticky-top">
+  <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid ms-2 me-2">
       <a class="navbar-brand" href="#"><img class="logo" src="img/logo2.png" alt="รูปภาพโลโก้เว็บไซต์ Tail and Paw"></a>
       <div class="d-flex d-lg-none ms-auto align-items-center">
@@ -42,7 +46,7 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">หน้าหลัก</a>
+            <a class="nav-link" aria-current="page" href="#">หน้าหลัก</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -65,10 +69,10 @@
             <a class="nav-link" href="howtobuy.html">วิธีการสั่งซื้อสินค้า</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link active" href="about.html">เกี่ยวกับเรา</a>
+            <a class="nav-link active" href="About.html">เกี่ยวกับเรา</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contack.html">ติดต่อเรา</a>
+            <a class="nav-link" href="Contack.html">ติดต่อเรา</a>
           </li>
         </ul>
 
@@ -76,8 +80,8 @@
           <li class="nav-item">
             <a class="nav-link" style="font-size: 1.2em;" href="shopping.html"><i class="bi bi-cart3"></i></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link me-1" style="font-size: 1.2em;" href="#"><i class="bi bi-bell-fill"></i></a>
+          <li class="nav-item"></li>
+          <a class="nav-link me-1" style="font-size: 1.2em;" href="#"><i class="bi bi-bell-fill"></i></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" style="font-size: 1.2em;" href="#"><i class="bi bi-person-fill"></i></a>
@@ -87,10 +91,19 @@
       </div>
     </div>
   </nav><br>
-    
 
 
-        <div class="container ctn">
+      <div class="container-fluid"><br>
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item ms-3"><a href="index.html">หน้าหลัก</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="status.html">สถานะสินค้า</a></li>
+            <li class="breadcrumb-item active" aria-current="page">การให้คะแนน</li>
+          </ol>
+        </nav>
+
+
+        <div class="container">
             <div class="official-shop">
                 
             </div>
@@ -182,11 +195,9 @@
             });
         });
     </script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
     <script src="js/scrip.js"></script>
 </body>
 </html>

@@ -1,69 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 /* css หลักใช้ทุกๆหน้า */
 :root {
-    --footet_header-color: rgb(255, 245, 158);
-    --botton-color:#FFB719;
-  }
+   --footet_header-color: rgb(255, 245, 158);
+   --botton-color:#FFB719;
+}
 body {
-    max-width: 1980px;
+    max-width: 1980px;      
     min-width: 320px;
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     box-sizing: border-box;
     font-family: kanit;
-}
-
-.logo {
+    background-color: rgb(255, 255, 255);
+  }
+  .navbar{
+   background-color: var(--footet_header-color);
+  }
+  .logo {
     width: 4em;
-}
+  }
 
-.dropdown-menu {
+  .dropdown-menu {
     display: none;
     position: absolute;
-}
+  }
 
-.dropdown-menu.show {
+  .dropdown-menu.show {
     display: block;
-}
+  }
 
-.dropdown-submenu {
+  .dropdown-submenu {
     position: relative;
-}
+  }
 
-.dropdown-submenu .dropdown-menu {
+  .dropdown-submenu .dropdown-menu {
     left: 100%;
     top: 0;
     margin-left: 0;
     display: none;
-}
+  }
 
-.dropdown-submenu:hover .dropdown-menu {
+  .dropdown-submenu:hover .dropdown-menu {
     display: block;
+  }
+  .foott{
+   background-color: var(--footet_header-color);
+  }
+
+ .line-text{
+    display: flex;
+    align-items: center;
+    text-align: center;
+ }
+ .line-text hr{
+    flex: 1;
+ }
+ .line-text span{
+    margin: 15px 10px;
+ }
+
+.iconphone a {
+  color: rgb(117, 117, 117);
 }
 
-.navbar {
-    background-color: var(--footet_header-color);
+.iconphone a:hover {
+  color: rgb(0, 0, 0);
 }
 
-.imgfooter {
-    width: 12em;
-}
+/* ใช้ทุกนห้า */
 
-.foott {
-    background-color: var(--footet_header-color);
-}
-.btncontact{
-    font-size: 1.4em;
-    word-spacing: .2em;
- }
- .btncontact a{
-    color: rgb(48, 48, 48);
- }
- .btncontact a:hover{
-    color: black;
- }
-/* End */
+
 .contact2 {
     margin-left: 0em;
     line-height: 1.7em;
@@ -96,4 +102,15 @@ body {
 
 .iconphone a:hover {
     color: rgb(0, 0, 0);
+}
+
+.btncontact{
+  font-size: 1.4em;
+  word-spacing: .2em;
+}
+.btncontact a{
+  color: rgb(48, 48, 48);
+}
+.btncontact a:hover{
+  color: black;
 }

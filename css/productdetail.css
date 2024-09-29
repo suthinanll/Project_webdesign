@@ -5,7 +5,16 @@
    --button-color:#FFB719;
 }
 
-
+.btncontact{
+  font-size: 1.4em;
+  word-spacing: .2em;
+}
+.btncontact a{
+  color: rgb(48, 48, 48);
+}
+.btncontact a:hover{
+  color: black;
+}
 body {
     max-width: 1980px;      
     min-width: 320px;

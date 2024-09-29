@@ -59,6 +59,17 @@ body {
     margin: 15px 10px;
  }
 
+.iconphone a {
+  color: rgb(117, 117, 117);
+}
+
+.iconphone a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* ใช้ทุกนห้า */
+
+
  /* login */
  .login{
     background-color: white;
@@ -189,11 +200,6 @@ input {
  }
  .linkb:hover{
    text-decoration: underline;
- }
- .iconphone a {
-   color: rgb(117, 117, 117);
-}
 
-.iconphone a:hover {
-   color: rgb(0, 0, 0);
-}
+
+ }

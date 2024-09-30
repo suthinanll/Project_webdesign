@@ -187,6 +187,7 @@ body {
 }
 
 @media screen and (max-width: 574px) {
+
    .bi-person-fill,.bi-cart3,.bi-bell-fill{
      color: rgb(0, 0, 0 ,0.60);
   
@@ -222,6 +223,10 @@ body {
 
 .icon-circle img {
    width: 80px; 
+   height: auto;
+}
+.card{
+   width: 100%;
    height: auto;
 }
 

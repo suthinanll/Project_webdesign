@@ -79,7 +79,11 @@ body {
   }
 
 
-
+.product-container{
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+}
  
  .ctn{
     background-color: white;
@@ -218,5 +222,18 @@ body {
     margin-left: auto;
     
 }
+.dropdown-menu {
+    position: relative;
+    right: 0;
+    left: 100%; 
+    width: 60px; 
+  }
+ 
+ 
+ #onIcon{
+    margin-left: auto;
+    margin-right: 20px;
+    transform: translateY(-3%);
+ }
 
  

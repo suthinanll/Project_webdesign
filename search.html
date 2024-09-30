@@ -14,8 +14,7 @@
   <link rel="stylesheet" href="./css/navandfoot.css">
 
 <body>
-
-  <nav class="navbar navbar-expand-lg ">
+  <nav class="navbar navbar-expand-lg sticky-top ">
     <div class="container-fluid ms-2 me-2">
       <a class="navbar-brand" href="#"><img class="logo" src="img/logo2.png" alt="รูปภาพโลโก้เว็บไซต์ Tail and Paw"></a>
       <div class="d-flex d-lg-none ms-auto align-items-center">
@@ -33,7 +32,7 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#">หน้าหลัก</a>
+            <a class="nav-link" aria-current="page" href="index.html">หน้าหลัก</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -43,48 +42,57 @@
               <li class="dropdown-submenu">
                 <a class="dropdown-item dropdown-toggle" href="#">อาหาร และ ขนม</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">สำหรับสุนัข</a></li>
-                  <li><a class="dropdown-item" href="#">สำหรับสแมว</a></li>
-                  <li><a class="dropdown-item" href="#">สัตว์ชนิดอื่นๆ</a></li>
+                  <li><a class="dropdown-item" href="./product/dogfood.html">สำหรับสุนัข</a></li>
+                  <li><a class="dropdown-item" href="./product/catfood.html">สำหรับสแมว</a></li>
+                  <li><a class="dropdown-item" href="./product/etc.html">สัตว์ชนิดอื่นๆ</a></li>
                 </ul>
               </li>
-              <li><a class="dropdown-item" href="#">ผลิตภัณฑ์ดูแลขน</a></li>
-              <li><a class="dropdown-item" href="#">สินค้าอื่นๆ</a></li>
+              <li><a class="dropdown-item" href="./search.html">ผลิตภัณฑ์ดูแลขน</a></li>
+              <li><a class="dropdown-item" href="./product/product.html">สินค้าอื่นๆ</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active href=" howtobuy.html">วิธีการสั่งซื้อสินค้า</a>
+            <a class="nav-link" href="howtobuy.html">วิธีการสั่งซื้อสินค้า</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="About.html">เกี่ยวกับเรา</a>
+          <li class="nav-item ">
+            <a class="nav-link active" href="About.html">เกี่ยวกับเรา</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Contack.html">ติดต่อเรา</a>
           </li>
         </ul>
 
-        <ul class="navbar-nav ms-auto d-none d-lg-flex iconphone ">
-          <li class="nav-item ">
-            <a class="nav-link " style="font-size: 1.2em;" href="shopping.html"><i class="bi bi-cart3"></i></a>
-          </li>
-          <li class="nav-item"></li>
-          <a class="nav-link me-1" style="font-size: 1.2em;" href="#"><i class="bi bi-bell-fill"></i></a>
+        <ul class="navbar-nav ms-auto d-none d-lg-flex iconphone">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: 1.2em;" href="./shopping.html"><i class="bi bi-cart3"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-size: 1.2em;" href="#"><i class="bi bi-person-fill"></i></a>
+            <a class="nav-link me-1" style="font-size: 1.2em;" href="./notification.html"><i class="bi bi-bell-fill"></i></a>
+          </li>
+          <li class="nav-item-dropdown">
+            <!-- <a class="nav-link" style="font-size: 1.2em;" href="#"><i class="bi bi-person-fill"></i> -->
+              <a class="nav-link dropdown" style="font-size: 1.2em;" href="#" id="navbarDropdownn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person-fill"></i>
+              </a>
+              <ul class="dropdown-menu" id="onIcon" aria-labelledby="navbarDropdown">
+                
+              <li><a class="dropdown-item" href="./useraccount.html">บัญชีผู้ใช้</a></li>
+              <li><a class="dropdown-item" href="./favorite.html">รายการโปรด</a></li>
+              <li><a class="dropdown-item" href="./history.html">ประวัติการซื้อ</a></li>
+              <li class="dropdown-submenu"><a class="dropdown-item" href="./login.html">ออกจากระบบ</a></li>
+              </ul>
+            
           </li>
         </ul>
-
       </div>
     </div>
-  </nav>
-
+  </nav><br>
   <div class="container-fluid ">
     <div class="row">
       <div class="col-12 mb-3">
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="ค้นหา..." aria-label="Search">
-          <button id="search-button" type="button">
+          <input type="text" class="form-control" id="search-input" placeholder="ค้นหา..." aria-label="Search">
+          <button id="search-button" onclick="searchTable()" type="button">
             <i class="bi bi-search"></i>
           </button>
           <button class="d-block d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
@@ -107,11 +115,11 @@
         <div class="filters">
           <h4>ยี่ห้อ</h4>
           <ul>
-            <li><input type="checkbox" id="royal-canin"> <label for="royal-canin">Royal Canin</label></li>
-            <li><input type="checkbox" id="hills"> <label for="hills">Hill's Science Diet</label></li>
-            <li><input type="checkbox" id="purina"> <label for="purina">Purina</label></li>
-            <li><input type="checkbox" id="smartheart"> <label for="smartheart">SmartHeart</label></li>
-            <li><input type="checkbox" id="pedigree"> <label for="pedigree">Pedigree</label></li>
+            <li><input type="checkbox" > <label for="royal-canin">Bubble Bear</label></li>
+            <li><input type="checkbox" > <label for="hills">Playpals</label></li>
+            <li><input type="checkbox" > <label for="purina">Yegbong</label></li>
+            <li><input type="checkbox" > <label for="smartheart">Dalbon</label></li>
+            
           </ul>
           <hr>
           <h4>ประเภทสัตว์</h4>
@@ -148,8 +156,8 @@
                     <hr>
                     <h4>ประเภทสัตว์</h4>
                     <ul>
-                        <li><input type="checkbox" id="dog"> <label for="dog">สุนัข</label></li>
-                        <li><input type="checkbox" id="cat"> <label for="cat">แมว</label></li>
+                        <li><input type="checkbox" id="dogone"> <label for="dog">สุนัข</label></li>
+                        <li><input type="checkbox" id="catone"> <label for="cat">แมว</label></li>
                     </ul>
                     <hr>
                     <h4>ช่วงราคา</h4>
@@ -164,7 +172,7 @@
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
                             <div class="col-6 col-md-4 col-lg-3 mb-2">
                                 <div class="card h-100">
-                                    <img src="./img/Product-img/hiat-product.jpg" class="card-img-top" alt="รูปภาพสินค้า">
+                                    <img src="./img/Product-img/hiat-product.jpg" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
                                     <div class="card-body d-flex flex-column justify-content-between ">
                                         <div>
                                             <h5 class="card-title">Yegbong</h5>
@@ -179,7 +187,7 @@
                             </div>
                             <div class="col-6 col-md-4 col-lg-3 mb-2">
                               <div class="card h-100">
-                                  <img src="./img/Product-img/hair-product.png" class="card-img-top" alt="รูปภาพสินค้า">
+                                  <img src="./img/Product-img/hair-product.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
                                   <div class="card-body d-flex flex-column justify-content-between ">
                                       <div>
                                           <h5 class="card-title">Bubble Bear</h5>
@@ -194,7 +202,7 @@
                             </div>
                             <div class="col-6 col-md-4 col-lg-3 mb-2">
                                 <div class="card h-100">
-                                    <img src="./img/Product-img/hair-product (2).png" class="card-img-top" alt="รูปภาพสินค้า">
+                                    <img src="./img/Product-img/hair-product2.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
                                     <div class="card-body d-flex flex-column justify-content-between ">
                                         <div>
                                             <h5 class="card-title">Sleeky </h5>
@@ -207,9 +215,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3 mb-2" ">
+                            <div class="col-6 col-md-4 col-lg-3 mb-2">
                                 <div class="card h-100">
-                                    <img src="./img/Product-img/hair-product (3).png" class="card-img-top" alt="รูปภาพสินค้า">
+                                    <img src="./img/Product-img/hair-product3.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
                                     <div class="card-body d-flex flex-column justify-content-between ">
                                         <div>
                                             <h5 class="card-title">Dalbon </h5>
@@ -222,9 +230,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3 mb-2" ">
+                            <div class="col-6 col-md-4 col-lg-3 mb-2">
                                 <div class="card h-100">
-                                    <img src="./img/Product-img/hair-product (4).png" class="card-img-top" alt="รูปภาพสินค้า">
+                                    <img src="./img/Product-img/hair-product4.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
                                     <div class="card-body d-flex flex-column justify-content-between ">
                                         <div>
                                             <h5 class="card-title">Playpals </h5>
@@ -237,9 +245,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3 mb-2" ">
+                            <div class="col-6 col-md-4 col-lg-3 mb-2">
                                 <div class="card h-100">
-                                    <img src="./img/Product-img/hair-product (5).png" class="card-img-top" alt="รูปภาพสินค้า">
+                                    <img src="./img/Product-img/hair-product5.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
                                     <div class="card-body d-flex flex-column justify-content-between ">
                                         <div>
                                             <h5 class="card-title">Bubble Bear</h5>
@@ -252,9 +260,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3 mb-2" ">
+                            <div class="col-6 col-md-4 col-lg-3 mb-2">
                                 <div class="card h-100">
-                                    <img src="./img/Product-img/hair-product (8).png" class="card-img-top" alt="รูปภาพสินค้า">
+                                    <img src="./img/Product-img/hair-product6.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
                                     <div class="card-body d-flex flex-column justify-content-between ">
                                         <div>
                                             <h5 class="card-title">Bubble Bear </h5>
@@ -267,9 +275,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3 mb-2" ">
+                            <div class="col-6 col-md-4 col-lg-3 mb-2">
                                 <div class="card h-100">
-                                    <img src="./img/Product-img/hair-product (7).png" class="card-img-top" alt="รูปภาพสินค้า">
+                                    <img src="./img/Product-img/hair-product7.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
                                     <div class="card-body d-flex flex-column justify-content-between ">
                                         <div>
                                             <h5 class="card-title">O2 Plus </h5>
@@ -286,16 +294,8 @@
                         </div>
                     </div>
                   </div>
-            
-
-
-
-      
-
-
-
-
-
+                </div>
+          
   <div class="container-fluid foott mt-5">
     <div class="container"><br>
       <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-2 my-1 mt-4">
@@ -340,9 +340,24 @@
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous">
+    </script>
     <script src="js/scrip.js"></script>
 
-</body>
 
+    <script> 
+      function searchTable() {
+          var input = document.getElementById("search-input").value.toLowerCase();
+          var rows = document.querySelectorAll("h5");
+          rows.forEach(function(row) {
+              var rowData = row.innerText.toLowerCase();
+              if (rowData.includes(input)) {
+                  row.style.display = ""; // Show row
+              } else {
+                  row.style.display = "none"; // Hide row
+              }
+          });
+      }
+  </script>
+</body>
 </html>

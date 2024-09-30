@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
     
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg sticky-top ">
         <div class="container-fluid ms-2 me-2">
           <a class="navbar-brand" href="#"><img class="logo" src="img/logo2.png" alt="รูปภาพโลโก้เว็บไซต์ Tail and Paw"></a>
           <div class="d-flex d-lg-none ms-auto align-items-center">
@@ -31,7 +31,7 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">หน้าหลัก</a>
+                <a class="nav-link" aria-current="page" href="index.html">หน้าหลัก</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -41,13 +41,13 @@
                   <li class="dropdown-submenu">
                     <a class="dropdown-item dropdown-toggle" href="#">อาหาร และ ขนม</a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">สำหรับสุนัข</a></li>
-                      <li><a class="dropdown-item" href="#">สำหรับสแมว</a></li>
-                      <li><a class="dropdown-item" href="#">สัตว์ชนิดอื่นๆ</a></li>
+                      <li><a class="dropdown-item" href="./product/dogfood.html">สำหรับสุนัข</a></li>
+                      <li><a class="dropdown-item" href="./product/catfood.html">สำหรับสแมว</a></li>
+                      <li><a class="dropdown-item" href="./product/etc.html">สัตว์ชนิดอื่นๆ</a></li>
                     </ul>
                   </li>
-                  <li><a class="dropdown-item" href="#">ผลิตภัณฑ์ดูแลขน</a></li>
-                  <li><a class="dropdown-item" href="#">สินค้าอื่นๆ</a></li>
+                  <li><a class="dropdown-item" href="./search.html">ผลิตภัณฑ์ดูแลขน</a></li>
+                  <li><a class="dropdown-item" href="./product/product.html">สินค้าอื่นๆ</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -63,19 +63,29 @@
     
             <ul class="navbar-nav ms-auto d-none d-lg-flex iconphone">
               <li class="nav-item">
-                <a class="nav-link" style="font-size: 1.2em;" href="shopping.html"><i class="bi bi-cart3"></i></a>
-              </li>
-              <li class="nav-item"></li>
-              <a class="nav-link me-1" style="font-size: 1.2em;" href="#"><i class="bi bi-bell-fill"></i></a>
+                <a class="nav-link" style="font-size: 1.2em;" href="./shopping.html"><i class="bi bi-cart3"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" style="font-size: 1.2em;" href="#"><i class="bi bi-person-fill"></i></a>
+                <a class="nav-link me-1" style="font-size: 1.2em;" href="./notification.html"><i class="bi bi-bell-fill"></i></a>
+              </li>
+              <li class="nav-item-dropdown">
+                <!-- <a class="nav-link" style="font-size: 1.2em;" href="#"><i class="bi bi-person-fill"></i> -->
+                  <a class="nav-link dropdown" style="font-size: 1.2em;" href="#" id="navbarDropdownn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-person-fill"></i>
+                  </a>
+                  <ul class="dropdown-menu" id="onIcon" aria-labelledby="navbarDropdown">
+                    
+                  <li><a class="dropdown-item" href="./useraccount.html">บัญชีผู้ใช้</a></li>
+                  <li><a class="dropdown-item" href="./favorite.html">รายการโปรด</a></li>
+                  <li><a class="dropdown-item" href="./history.html">ประวัติการซื้อ</a></li>
+                  <li class="dropdown-submenu"><a class="dropdown-item" href="./login.html">ออกจากระบบ</a></li>
+                  </ul>
+                
               </li>
             </ul>
-    
           </div>
         </div>
-      </nav><br>
+      </nav>
 
       
 
@@ -116,18 +126,18 @@
 <div id="shop" class="content">
     <div class="container my-5" id="card-content">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
-            <div id="section-heading"><p>สินค้าขายดี</p></div>
+            <div class="section-heading"><p>สินค้าขายดี</p></div>
             <div class="col-6 col-md-4 col-lg-3 mb-2">
                 <div class="card h-100">
                     <span class="pro1">Top <br><span>1</span></span>
-                    <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
+                    <img src="./img/Product-img/food-product11.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
                     <div class="card-body d-flex flex-column justify-content-between">
                         <div>
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card</p>
+                            <h5 class="card-title">Pedigree</h5>
+                            <p class="card-text">อาหารเม็ด สำหรับสุนัขโต สูตรแห้ง รถชาติตับและผัก 20kg</p>
                         </div>
                         <div class="d-flex justify-content-between align-items-end">
-                            <h3 class="price-product">฿250</h3>
+                            <h3 class="price-product">฿1,550</h3>
                             <button type="button" class="btn addcart"><span>เพิ่มลงตระกร้า</span> <i class="bi bi-cart3"></i></button>
                         </div>
                     </div>
@@ -136,11 +146,11 @@
             <div class="col-6 col-md-4 col-lg-3 mb-2">
                 <div class="card h-100">
                     <span class="pro2">Top <br><span>2</span></span>
-                    <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
+                    <img src="./img/Product-img/pedigree1.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
                     <div class="card-body d-flex flex-column justify-content-between">
                         <div>
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card</p>
+                            <h5 class="card-title">Pedigree</h5>
+                            <p class="card-text">เพดดิกรี อาหารเม็ด ลูกสุนัขพันธุ์เล็ก รสนม</p>
                         </div>
                         <div class="d-flex justify-content-between align-items-end">
                             <h3 class="price-product">฿250</h3>
@@ -152,14 +162,14 @@
             <div class="col-6 col-md-4 col-lg-3 mb-2">
                 <div class="card h-100">
                     <span class="pro3">Top <br><span>3</span></span>
-                    <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
+                    <img src="./img/Product-img/img-food-product1.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
                     <div class="card-body d-flex flex-column justify-content-between">
                         <div>
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card</p>
+                            <h5 class="card-title">Pedigree</h5>
+                            <p class="card-text">อาหารเม็ดสำหรับสุนัขพันธุ์เล็ก โตเต็มวัย ชนิดแห้ง ขนาด 2kg</p>
                         </div>
                         <div class="d-flex justify-content-between align-items-end">
-                            <h3 class="price-product">฿250</h3>
+                            <h3 class="price-product">฿290</h3>
                             <button type="button" class="btn addcart"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>                        
                         </div>
                     </div>
@@ -168,14 +178,14 @@
             <div class="col-6 col-md-4 col-lg-3 mb-2">
                 <div class="card h-100">
                     <span class="pro4">Top <br><span>4</span></span>
-                    <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
+                    <img src="./img/Product-img/img-food-product2.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
                     <div class="card-body d-flex flex-column justify-content-between">
                         <div>
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card</p>
+                            <h5 class="card-title">Pedigree</h5>
+                            <p class="card-text">อาหารเม็ดสำหรับสุนัขพันธุ์ใหญ่ 1-5 เดือน รสชาติเนื้อและผัก</p>
                         </div>
                         <div class="d-flex justify-content-between align-items-end">
-                            <h3 class="price-product">฿250</h3>
+                            <h3 class="price-product">฿244</h3>
                             <button type="button" class="btn addcart"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>                        
                         </div>
                     </div>
@@ -199,14 +209,14 @@
         </div>
     
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
-                <div id="section-heading"><p>สินค้าลดราคา</p></div>
+                <div class="section-heading"><p>สินค้าลดราคา</p></div>
                 <div class="col-6 col-md-4 col-lg-3 mb-2">
                     <div class="card h-100">
-                        <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
+                        <img src="./img/Product-img/pedigree2.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <div>
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card</p>
+                                <h5 class="card-title">Pedigree</h5>
+                                <p class="card-text">อาหารเม็ดสำหรับสุนัขพันธุ์ใหญ่ โตเต็มเต็มวัย ขนาด 1.5 kg</p>
                             </div>
                             <div class="d-flex justify-content-between align-items-end">
                                 <h3 class="price-product">฿250</h3>
@@ -217,14 +227,14 @@
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-2">
                     <div class="card h-100">
-                        <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
+                        <img src="./img/Product-img/pedigree3.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <div>
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card</p>
+                                <h5 class="card-title">Pedigree</h5>
+                                <p class="card-text">อาหารเม็ดสำหรับสุนัขพันธุ์ใหญ่ 1-5 เดือน ขนาด 1.5 kg</p>
                             </div>
                             <div class="d-flex justify-content-between align-items-end">
-                                <h3 class="price-product">฿250</h3>
+                                <h3 class="price-product">฿249</h3>
                                 <button type="button" class="btn addcart"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>                            
                             </div>
                         </div>
@@ -232,14 +242,14 @@
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-2">
                     <div class="card h-100">
-                        <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
+                        <img src="./img/Product-img/pedigree4.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <div>
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card</p>
+                                <h5 class="card-title">Pedigree</h5>
+                                <p class="card-text">อาหารเม็ดสำหรับสุนัขพันธุ์เล็ก โตเต็มวัย รสชาติไก่ ชนิดแห้ง 1.3 kg</p>
                             </div>
                             <div class="d-flex justify-content-between align-items-end">
-                                <h3 class="price-product">฿250</h3>
+                                <h3 class="price-product">฿150</h3>
                                 <button type="button" class="btn addcart"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>                            
                             </div>
                         </div>
@@ -247,14 +257,14 @@
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-2">
                     <div class="card h-100">
-                        <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
+                        <img src="img/Product-img/pedigree5.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <div>
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card</p>
+                                <h5 class="card-title">Pedigree</h5>
+                                <p class="card-text" >เพดดิกรี อาหารชนิดเปียก สำหรับสุนัขโต รสวัวในน้ำเกรวี่</p>
                             </div>
                             <div class="d-flex justify-content-between align-items-end">
-                                <h3 class="price-product">฿250</h3>
+                                <h3 class="price-product">฿50</h3>
                                 <button type="button" class="btn addcart"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>                            
                             </div> 
                         </div>
@@ -284,11 +294,11 @@
             <div class="filters">
                 <h4>ยี่ห้อ</h4>
                 <ul>
-                    <li><input type="checkbox" id="royal-canin"> <label for="royal-canin">Royal Canin</label></li>
-                    <li><input type="checkbox" id="hills"> <label for="hills">Hill's Science Diet</label></li>
-                    <li><input type="checkbox" id="purina"> <label for="purina">Purina</label></li>
-                    <li><input type="checkbox" id="smartheart"> <label for="smartheart">SmartHeart</label></li>
-                    <li><input type="checkbox" id="pedigree"> <label for="pedigree">Pedigree</label></li>
+                    <li><input type="checkbox">  <label for="royal-canin">Royal Canin</label></li>
+                    <li><input type="checkbox" > <label for="hills">Hill's Science Diet</label></li>
+                    <li><input type="checkbox" > <label for="purina">Purina</label></li>
+                    <li><input type="checkbox" > <label for="smartheart">SmartHeart</label></li>
+                    <li><input type="checkbox" > <label for="pedigree">Pedigree</label></li>
                 </ul>
                 <hr>
                 <h4>ประเภทสัตว์</h4>
@@ -321,8 +331,8 @@
                     <hr>
                     <h4>ประเภทสัตว์</h4>
                     <ul>
-                        <li><input type="checkbox" id="dog"> <label for="dog">สุนัข</label></li>
-                        <li><input type="checkbox" id="cat"> <label for="cat">แมว</label></li>
+                        <li><input type="checkbox" id="dog-one"> <label for="dog">สุนัข</label></li>
+                        <li><input type="checkbox" id="cat-one"> <label for="cat">แมว</label></li>
                     </ul>
                     <hr>
                     <h4>ช่วงราคา</h4>
@@ -337,120 +347,123 @@
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
                             <div class="col-6 col-md-4 col-lg-3 mb-2">
                                 <div class="card h-100">
-                                    <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
-                                    <div class="card-body d-flex flex-column justify-content-between ">
+                                    <img src="./img/Product-img/pedigree3.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
+                                    <div class="card-body d-flex flex-column justify-content-between">
                                         <div>
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card</p>
+                                            <h5 class="card-title">Pedigree</h5>
+                                            <p class="card-text">อาหารเม็ดสำหรับสุนัขพันธุ์ใหญ่ 1-5 เดือน ขนาด 1.5 kg</p>
                                         </div>
                                         <div class="d-flex justify-content-between align-items-end">
-                                            <h3 class="price-product-list">฿250</h3>
-                                            <button type="button" class="btn addcartlist"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>
+                                            <h3 class="price-product">฿249</h3>
+                                            <button type="button" class="btn addcart"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>                            
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6 col-md-4 col-lg-3 mb-2">
                                 <div class="card h-100">
-                                    <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
-                                    <div class="card-body d-flex flex-column justify-content-between ">
-                                        <div
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card</p>
+                                    <img src="./img/Product-img/food-product11.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h5 class="card-title">Pedigree</h5>
+                                            <p class="card-text">อาหารเม็ด สำหรับสุนัขโต สูตรแห้ง รถชาติตับและผัก 20kg</p>
                                         </div>
                                         <div class="d-flex justify-content-between align-items-end">
-                                            <h3 class="price-product-list">฿250</h3>
-                                            <button type="button" class="btn addcartlist"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>
+                                            <h3 class="price-product">฿1,550</h3>
+                                            <button type="button" class="btn addcart"><span>เพิ่มลงตระกร้า</span> <i class="bi bi-cart3"></i></button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6 col-md-4 col-lg-3 mb-2">
                                 <div class="card h-100">
-                                    <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
-                                    <div class="card-body d-flex flex-column justify-content-between ">
+                                    
+                                    <img src="./img/Product-img/pedigree1.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
+                                    <div class="card-body d-flex flex-column justify-content-between">
                                         <div>
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card</p>
+                                            <h5 class="card-title">Pedigree</h5>
+                                            <p class="card-text">เพดดิกรี อาหารเม็ด ลูกสุนัขพันธุ์เล็ก รสนม</p>
                                         </div>
                                         <div class="d-flex justify-content-between align-items-end">
-                                            <h3 class="price-product-list">฿250</h3>
-                                            <button type="button" class="btn addcartlist"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>
+                                            <h3 class="price-product">฿250</h3>
+                                            <button type="button" class="btn addcart"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>                        
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3 mb-2" ">
+                            <div class="col-6 col-md-4 col-lg-3 mb-2">
                                 <div class="card h-100">
-                                    <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
-                                    <div class="card-body d-flex flex-column justify-content-between ">
+                                    
+                                    <img src="./img/Product-img/img-food-product2.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
+                                    <div class="card-body d-flex flex-column justify-content-between">
                                         <div>
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card</p>
+                                            <h5 class="card-title">Pedigree</h5>
+                                            <p class="card-text">อาหารเม็ดสำหรับสุนัขพันธุ์ใหญ่ 1-5 เดือน รสชาติเนื้อและผัก</p>
                                         </div>
                                         <div class="d-flex justify-content-between align-items-end">
-                                            <h3 class="price-product-list">฿250</h3>
-                                            <button type="button" class="btn addcartlist"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>
+                                            <h3 class="price-product">฿244</h3>
+                                            <button type="button" class="btn addcart"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>                        
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3 mb-2" ">
+                            <div class="col-6 col-md-4 col-lg-3 mb-2">
                                 <div class="card h-100">
-                                    <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
-                                    <div class="card-body d-flex flex-column justify-content-between ">
+                                    <img src="./img/Product-img/pedigree2.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
+                                    <div class="card-body d-flex flex-column justify-content-between">
                                         <div>
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card</p>
+                                            <h5 class="card-title">Pedigree</h5>
+                                            <p class="card-text">อาหารเม็ดสำหรับสุนัขพันธุ์ใหญ่ โตเต็มเต็มวัย ขนาด 1.5 kg</p>
                                         </div>
                                         <div class="d-flex justify-content-between align-items-end">
-                                            <h3 class="price-product-list">฿250</h3>
-                                            <button type="button" class="btn addcartlist"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>
+                                            <h3 class="price-product">฿250</h3>
+                                            <button type="button" class="btn addcart"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>                            
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3 mb-2" ">
+                            <div class="col-6 col-md-4 col-lg-3 mb-2">
                                 <div class="card h-100">
-                                    <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
-                                    <div class="card-body d-flex flex-column justify-content-between ">
+                                    <img src="./img/Product-img/pedigree3.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
+                                    <div class="card-body d-flex flex-column justify-content-between">
                                         <div>
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card</p>
+                                            <h5 class="card-title">Pedigree</h5>
+                                            <p class="card-text">อาหารเม็ดสำหรับสุนัขพันธุ์ใหญ่ 1-5 เดือน ขนาด 1.5 kg</p>
                                         </div>
                                         <div class="d-flex justify-content-between align-items-end">
-                                            <h3 class="price-product-list">฿250</h3>
-                                            <button type="button" class="btn addcartlist"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>
+                                            <h3 class="price-product">฿249</h3>
+                                            <button type="button" class="btn addcart"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>                            
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3 mb-2" ">
+                            <div class="col-6 col-md-4 col-lg-3 mb-2">
                                 <div class="card h-100">
-                                    <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
-                                    <div class="card-body d-flex flex-column justify-content-between ">
+                                    <img src="img/Product-img/pedigree5.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
+                                    <div class="card-body d-flex flex-column justify-content-between">
                                         <div>
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card</p>
+                                            <h5 class="card-title">Pedigree</h5>
+                                            <p class="card-text" >เพดดิกรี อาหารชนิดเปียก สำหรับสุนัขโต รสวัวในน้ำเกรวี่</p>
                                         </div>
                                         <div class="d-flex justify-content-between align-items-end">
-                                            <h3 class="price-product-list">฿250</h3>
-                                            <button type="button" class="btn addcartlist"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>
-                                        </div>
+                                            <h3 class="price-product">฿50</h3>
+                                            <button type="button" class="btn addcart"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>                            
+                                        </div> 
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3 mb-2" ">
+                            <div class="col-6 col-md-4 col-lg-3 mb-2">
                                 <div class="card h-100">
-                                    <img src="img/p2.jpg" class="card-img-top" alt="รูปภาพสินค้า">
-                                    <div class="card-body d-flex flex-column justify-content-between ">
+                                   
+                                    <img src="./img/Product-img/img-food-product1.png" class="card-img-top" alt="รูปภาพสินค้า" style="height: 17em;">
+                                    <div class="card-body d-flex flex-column justify-content-between">
                                         <div>
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card</p>
+                                            <h5 class="card-title">Pedigree</h5>
+                                            <p class="card-text">อาหารเม็ดสำหรับสุนัขพันธุ์เล็ก โตเต็มวัย ชนิดแห้ง ขนาด 2kg</p>
                                         </div>
                                         <div class="d-flex justify-content-between align-items-end">
-                                            <h3 class="price-product-list">฿250</h3>
-                                            <button type="button" class="btn addcartlist"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>
+                                            <h3 class="price-product">฿290</h3>
+                                            <button type="button" class="btn addcart"><span>เพิ่มลงตระกร้า</span><i class="bi bi-cart3"></i></button>                        
                                         </div>
                                     </div>
                                 </div>

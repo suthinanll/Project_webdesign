@@ -12,7 +12,7 @@
     
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg ">
+  <nav class="navbar navbar-expand-lg sticky-top ">
     <div class="container-fluid ms-2 me-2">
       <a class="navbar-brand" href="#"><img class="logo" src="img/logo2.png" alt="รูปภาพโลโก้เว็บไซต์ Tail and Paw"></a>
       <div class="d-flex d-lg-none ms-auto align-items-center">
@@ -30,7 +30,7 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">หน้าหลัก</a>
+            <a class="nav-link" aria-current="page" href="index.html">หน้าหลัก</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -40,13 +40,13 @@
               <li class="dropdown-submenu">
                 <a class="dropdown-item dropdown-toggle" href="#">อาหาร และ ขนม</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">สำหรับสุนัข</a></li>
-                  <li><a class="dropdown-item" href="#">สำหรับสแมว</a></li>
-                  <li><a class="dropdown-item" href="#">สัตว์ชนิดอื่นๆ</a></li>
+                  <li><a class="dropdown-item" href="./product/dogfood.html">สำหรับสุนัข</a></li>
+                  <li><a class="dropdown-item" href="./product/catfood.html">สำหรับสแมว</a></li>
+                  <li><a class="dropdown-item" href="./product/etc.html">สัตว์ชนิดอื่นๆ</a></li>
                 </ul>
               </li>
-              <li><a class="dropdown-item" href="#">ผลิตภัณฑ์ดูแลขน</a></li>
-              <li><a class="dropdown-item" href="#">สินค้าอื่นๆ</a></li>
+              <li><a class="dropdown-item" href="./search.html">ผลิตภัณฑ์ดูแลขน</a></li>
+              <li><a class="dropdown-item" href="./product/product.html">สินค้าอื่นๆ</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -62,16 +62,26 @@
 
         <ul class="navbar-nav ms-auto d-none d-lg-flex iconphone">
           <li class="nav-item">
-            <a class="nav-link" style="font-size: 1.2em;" href="shopping.html"><i class="bi bi-cart3"></i></a>
-          </li>
-          <li class="nav-item"></li>
-          <a class="nav-link me-1" style="font-size: 1.2em;" href="#"><i class="bi bi-bell-fill"></i></a>
+            <a class="nav-link" style="font-size: 1.2em;" href="./shopping.html"><i class="bi bi-cart3"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-size: 1.2em;" href="#"><i class="bi bi-person-fill"></i></a>
+            <a class="nav-link me-1" style="font-size: 1.2em;" href="./notification.html"><i class="bi bi-bell-fill"></i></a>
+          </li>
+          <li class="nav-item-dropdown">
+            <!-- <a class="nav-link" style="font-size: 1.2em;" href="#"><i class="bi bi-person-fill"></i> -->
+              <a class="nav-link dropdown" style="font-size: 1.2em;" href="#" id="navbarDropdownn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person-fill"></i>
+              </a>
+              <ul class="dropdown-menu" id="onIcon" aria-labelledby="navbarDropdown">
+                
+              <li><a class="dropdown-item" href="./useraccount.html">บัญชีผู้ใช้</a></li>
+              <li><a class="dropdown-item" href="./favorite.html">รายการโปรด</a></li>
+              <li><a class="dropdown-item" href="./history.html">ประวัติการซื้อ</a></li>
+              <li class="dropdown-submenu"><a class="dropdown-item" href="./login.html">ออกจากระบบ</a></li>
+              </ul>
+            
           </li>
         </ul>
-
       </div>
     </div>
   </nav><br>
@@ -81,13 +91,13 @@
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item ms-3"><a href="index.html">หน้าหลัก</a></li>
-            <li class="breadcrumb-item active" aria-current="page"><a href="status.html">สถานะสินค้า</a></li>
-            <li class="breadcrumb-item active" aria-current="page">การให้คะแนน</li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="status.html">คำสั่งซื้อ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">ให้คะแนน</li>
           </ol>
         </nav>
 
 
-        <div class="container">
+        <div class="container product-container">
             <div class="official-shop">
                 
             </div>
@@ -114,18 +124,19 @@
 
     
     <div class="buttons">
-        <input type="file" id="btn-photo" hidden/>
-        <label for="btn-photo" class="btn btn-photo">เพิ่มรูปภาพ</label>
-        <input type="file" id="btn-video" hidden/>
-        <label for="btn-video" class="btn btn-video">เพิ่มวิดีโอ</label>
-        
-    </div>
+      <input type="file" id="btn-photo" hidden>
+      <label for="btn-photo" class="btn btn-warning">เพิ่มรูปภาพ</label>
+      
+      <input type="file" id="btn-video" hidden>
+      <label for="btn-video" class="btn btn-warning">เพิ่มวิดีโอ</label>
+  </div>
+  
     
     <div class="container"><textarea class="textarea" placeholder="เขียนรีวิวสินค้าและบริการได้ที่นี่"></textarea></div>
     <div class="submit-button">
-        <button class="btn btn-submit" type="button" onclick="location.href='./index.html';">ยืนยัน</button> <br>
+        <button class="btn btn-warning submit" type="button" onclick="location.href='./index.html';">ยืนยัน</button> <br>
     </div>
-</div>
+
 
 <div class="container-fluid foott mt-5">
   <div class="container"><br>

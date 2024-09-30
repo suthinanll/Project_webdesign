@@ -102,7 +102,7 @@ p,h2{
     font-weight: 500;
     font-size: 20px;
 }
-.card .pro:nth-of-type(2) {
+/* .card .pro:nth-of-type(2) {
     background-color: #533b2d;
     color: white;
     width: 3em;
@@ -111,7 +111,7 @@ p,h2{
     padding-top: 0.5em;
     font-size: 18px;
     border-radius: 5px 0 5px 0;
-}
+} */
 
 
 .section-product{
@@ -122,7 +122,7 @@ p,h2{
 
 }
 
-#section-heading{
+.section-heading{
   background-color: white;
   padding: 10px ;
   width: 100%;
@@ -466,6 +466,19 @@ box-shadow: 0 4px 6px rgba(0, 0, 0,0.2);
    
 
 }
+.dropdown-menu {
+    position: relative;
+    right: 0;
+    left: 100%; 
+    width: 60px; 
+  }
+ 
+ 
+ #onIcon{
+    margin-left: auto;
+    margin-right: 20px;
+    transform: translateY(-3%);
+ }
 
 
 

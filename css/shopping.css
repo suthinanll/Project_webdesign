@@ -283,4 +283,16 @@ body {
 .search-bar, .date-range {
   width: 100%;
 }
+.dropdown-menu {
+  position: relative;
+  right: 0;
+  left: 100%; 
+  width: 60px; 
+}
 
+
+#onIcon{
+  margin-left: auto;
+  margin-right: 20px;
+  transform: translateY(-3%);
+}

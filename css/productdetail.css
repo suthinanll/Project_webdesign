@@ -124,7 +124,7 @@ body {
   margin: 20px;
 
 }
-#container-sectionn {
+.container-sectionn {
   background-color: white;
   padding: 1px 0 10px 0;
   margin-top: 10px;
@@ -132,8 +132,6 @@ body {
 #container-search{
   padding: 0 2px;
 }
-
-
 
 .img{
     border-radius: 100%;
@@ -143,4 +141,23 @@ body {
 
 .navbar-toggler{
   border: 1px solid rgb(0, 0, 0 ,0.20);
+}
+.rounded-circle{
+  border-radius: 100%;
+  background-color: #FC5B00;
+  height: 55px;
+  margin-bottom: 50px;
+}
+.dropdown-menu {
+  position: relative;
+  right: 0;
+  left: 100%; 
+  width: 60px; 
+}
+
+
+#onIcon{
+  margin-left: auto;
+  margin-right: 20px;
+  transform: translateY(-3%);
 }

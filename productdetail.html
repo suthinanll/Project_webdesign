@@ -11,7 +11,7 @@
    <link rel="stylesheet" href="./css/productdetail.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg ">
+  <nav class="navbar navbar-expand-lg sticky-top ">
     <div class="container-fluid ms-2 me-2">
       <a class="navbar-brand" href="#"><img class="logo" src="img/logo2.png" alt="รูปภาพโลโก้เว็บไซต์ Tail and Paw"></a>
       <div class="d-flex d-lg-none ms-auto align-items-center">
@@ -29,7 +29,7 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#">หน้าหลัก</a>
+            <a class="nav-link" aria-current="page" href="index.html">หน้าหลัก</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -39,41 +39,51 @@
               <li class="dropdown-submenu">
                 <a class="dropdown-item dropdown-toggle" href="#">อาหาร และ ขนม</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">สำหรับสุนัข</a></li>
-                  <li><a class="dropdown-item" href="#">สำหรับสแมว</a></li>
-                  <li><a class="dropdown-item" href="#">สัตว์ชนิดอื่นๆ</a></li>
+                  <li><a class="dropdown-item" href="./product/dogfood.html">สำหรับสุนัข</a></li>
+                  <li><a class="dropdown-item" href="./product/catfood.html">สำหรับสแมว</a></li>
+                  <li><a class="dropdown-item" href="./product/etc.html">สัตว์ชนิดอื่นๆ</a></li>
                 </ul>
               </li>
-              <li><a class="dropdown-item" href="#">ผลิตภัณฑ์ดูแลขน</a></li>
-              <li><a class="dropdown-item" href="#">สินค้าอื่นๆ</a></li>
+              <li><a class="dropdown-item" href="./search.html">ผลิตภัณฑ์ดูแลขน</a></li>
+              <li><a class="dropdown-item" href="./product/product.html">สินค้าอื่นๆ</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active href="howtobuy.html">วิธีการสั่งซื้อสินค้า</a>
+            <a class="nav-link" href="howtobuy.html">วิธีการสั่งซื้อสินค้า</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="About.html">เกี่ยวกับเรา</a>
+          <li class="nav-item ">
+            <a class="nav-link active" href="About.html">เกี่ยวกับเรา</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Contack.html">ติดต่อเรา</a>
           </li>
         </ul>
 
-        <ul class="navbar-nav ms-auto d-none d-lg-flex iconphone ">
-          <li class="nav-item ">
-            <a class="nav-link " style="font-size: 1.2em;" href="shopping.html"><i class="bi bi-cart3"></i></a>
-          </li>
-          <li class="nav-item"></li>
-          <a class="nav-link me-1" style="font-size: 1.2em;" href="#"><i class="bi bi-bell-fill"></i></a>
+        <ul class="navbar-nav ms-auto d-none d-lg-flex iconphone">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: 1.2em;" href="./shopping.html"><i class="bi bi-cart3"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-size: 1.2em;" href="#"><i class="bi bi-person-fill"></i></a>
+            <a class="nav-link me-1" style="font-size: 1.2em;" href="./notification.html"><i class="bi bi-bell-fill"></i></a>
+          </li>
+          <li class="nav-item-dropdown">
+            <!-- <a class="nav-link" style="font-size: 1.2em;" href="#"><i class="bi bi-person-fill"></i> -->
+              <a class="nav-link dropdown" style="font-size: 1.2em;" href="#" id="navbarDropdownn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person-fill"></i>
+              </a>
+              <ul class="dropdown-menu" id="onIcon" aria-labelledby="navbarDropdown">
+                
+              <li><a class="dropdown-item" href="./useraccount.html">บัญชีผู้ใช้</a></li>
+              <li><a class="dropdown-item" href="./favorite.html">รายการโปรด</a></li>
+              <li><a class="dropdown-item" href="./history.html">ประวัติการซื้อ</a></li>
+              <li class="dropdown-submenu"><a class="dropdown-item" href="./login.html">ออกจากระบบ</a></li>
+              </ul>
+            
           </li>
         </ul>
-
       </div>
     </div>
-  </nav>
+  </nav><br>
 
       <div class="container" id="container-search">
         <div class="row">
@@ -96,19 +106,19 @@
                 <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./img/Product-img/food-detail (5).png" class="d-block w-60 product-image" alt="Pedigree Dog Food 1" data-bs-toggle="modal" data-bs-target="#imageModal">
+                            <img src="./img/Product-img/food-detail-one.png" class="d-block w-60 product-image" alt="Pedigree Dog Food 1" data-bs-toggle="modal" data-bs-target="#imageModal">
                         </div>
                         <div class="carousel-item">
                             <img src="./img/Product-img/food-detail.png" class="d-block w-60 product-image" alt="Pedigree Dog Food 2" data-bs-toggle="modal" data-bs-target="#imageModal">
                         </div>
                         <div class="carousel-item">
-                            <img src="./img/Product-img/food-detail(6).png" class="d-block w-60 product-image" alt="Pedigree Dog Food 3" data-bs-toggle="modal" data-bs-target="#imageModal">
+                            <img src="./img/Product-img/food-detail-two.png" class="d-block w-60 product-image" alt="Pedigree Dog Food 3" data-bs-toggle="modal" data-bs-target="#imageModal">
                         </div>
                         <div class="carousel-item">
-                          <img src="./img/Product-img/food-detail (7).png" class="d-block w-60 product-image" alt="Pedigree Dog Food 3" data-bs-toggle="modal" data-bs-target="#imageModal">
+                          <img src="./img/Product-img/food-detail-three.png" class="d-block w-60 product-image" alt="Pedigree Dog Food 3" data-bs-toggle="modal" data-bs-target="#imageModal">
                       </div>
                       <div class="carousel-item">
-                        <img src="./img/Product-img/food-detail (8).png" class="d-block w-60 product-image" alt="Pedigree Dog Food 3" data-bs-toggle="modal" data-bs-target="#imageModal">
+                        <img src="./img/Product-img/food-detail-four.png" class="d-block w-60 product-image" alt="Pedigree Dog Food 3" data-bs-toggle="modal" data-bs-target="#imageModal">
                     </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
@@ -121,11 +131,11 @@
                     </button>
                 </div>
                 <div class="d-flex justify-content-center mt-2">
-                    <img src="./img/Product-img/food-detail (5).png" class="carousel-thumbnail me-2" data-bs-target="#productCarousel" data-bs-slide-to="0" alt="Thumbnail 1">
+                    <img src="./img/Product-img/food-detail-one.png" class="carousel-thumbnail me-2" data-bs-target="#productCarousel" data-bs-slide-to="0" alt="Thumbnail 1">
                     <img src="./img/Product-img/food-detail.png" class="carousel-thumbnail me-2" data-bs-target="#productCarousel" data-bs-slide-to="1" alt="Thumbnail 2">
-                    <img src="./img/Product-img/food-detail(6).png" class="carousel-thumbnail" data-bs-target="#productCarousel" data-bs-slide-to="2" alt="Thumbnail 3">
-                    <img src="./img/Product-img/food-detail (7).png" class="carousel-thumbnail" data-bs-target="#productCarousel" data-bs-slide-to="2" alt="Thumbnail 4">
-                    <img src="./img/Product-img/food-detail (8).png" class="carousel-thumbnail" data-bs-target="#productCarousel" data-bs-slide-to="2" alt="Thumbnail 5">
+                    <img src="./img/Product-img/food-detail-two.png" class="carousel-thumbnail" data-bs-target="#productCarousel" data-bs-slide-to="2" alt="Thumbnail 3">
+                    <img src="./img/Product-img/food-detail-three.png" class="carousel-thumbnail" data-bs-target="#productCarousel" data-bs-slide-to="2" alt="Thumbnail 4">
+                    <img src="./img/Product-img/food-detail-four.png" class="carousel-thumbnail" data-bs-target="#productCarousel" data-bs-slide-to="2" alt="Thumbnail 5">
                    
                 </div>
             </div>
@@ -141,11 +151,11 @@
                 </div>
                 <h3 class="text-dangerr">฿1,265.00</h3>
                 <div class="d-flex align-items-center mb-3">
-                    <label for="">จำนวน</label>
-                    <button class="btn btn-outline-secondary me-2">-</button>
-                    <input type="text" class="form-control text-center" style="max-width: 50px; height: 2em;" value="1">
-                    <button class="btn btn-outline-secondary ms-2">+</button>
-                    <i class="far fa-heart heart-icon float-end"></i>
+                  <label for="quantity">จำนวน</label>
+                  <button class="btn btn-outline-secondary me-2">-</button>
+                  <input type="text" id="quantity" class="form-control text-center" style="max-width: 50px; height: 2em;" value="1">
+                  <button class="btn btn-outline-secondary ms-2">+</button>
+                  <i class="far fa-heart heart-icon float-end"></i>
                 </div>
                 <div class="d-flex justify-content-center mb-3"> 
                     <button class="btn btn-warning btn-lg">เพิ่มลงตะกร้า</button>
@@ -157,7 +167,7 @@
             
 
       
-       <div class="container" id="container-sectionn">
+       <div class="container container-sectionn" >
         <div class="section-detail"></div>
         <div class="row">
             <div class="col-md">
@@ -169,14 +179,14 @@
         </div>
       </div>
 
-      <div class="container" id="container-sectionn">
+      <div class="container container-sectionn" >
         <div class="section-detail"></div>
         <div class="row">
             <div class="col-md-6">
                 <section id="product-reviews">
                     <h4>คะแนนสินค้า</h4>
                     <div class="d-flex align-items-center">
-                        <img class="img bg-danger" src="img/cat (2).png" width="50px" alt="รูปโปรไฟล์ผู้ใช้งาน" class="rounded-circle me-2">
+                        <img src="img/cat.png" style="width: 50px;" alt="รูปโปรไฟล์ผู้ใช้งาน" class="rounded-circle me-2">
                         <div>
                             <div>
                                 <i class="fas fa-star text-warning"></i>
@@ -193,19 +203,19 @@
             </div>
         </div>
        </div>
-      </div>
+      
 
 
   
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-body">
-                    <img src="" class="img-fluid" id="modalImage">
+                    <img src="./img/add1.png" class="img-fluid" id="modalImage">
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
   
 
   

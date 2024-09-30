@@ -66,6 +66,9 @@ body {
     margin: 15px 0; 
  
 }
+.rounded-start{
+   width:140px;
+}
 
 .l{
     background-color: #fff9a0;
@@ -77,9 +80,10 @@ body {
    background-color: whitesmoke;
 }
 
-#card {
+#card,#cardd,#carddd{
    padding: 0 80px;
 }
+
 
 .section-product {
    margin-top: 30px;
@@ -164,7 +168,8 @@ body {
 }
 
 .form-control {
-   padding: 30px 15px;
+   padding: 20px 15px;
+ 
 }
 
 .btn {
@@ -244,39 +249,6 @@ body {
 
    }
    
-
-  
-
-/* }
-.user-menu {
-   position: relative;
-   display: inline-block;
-}
-.user-icon {
-   font-size: 24px;
-   cursor: pointer;
-}
-.dropdown-con {
-   display: none;
-   position: absolute;
-   right: 0;
-   background-color: #f9f9f9;
-   min-width: 160px;
-   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-   z-index: 1;
-}
-.user-menu:hover .dropdown-con {
-   display: block;
-}
-.dropdown-con a {
-   color: black;
-   padding: 12px 16px;
-   text-decoration: none;
-   display: block;
-}
-.dropdown-con a:hover {
-   background-color: #f1f1f1;
-} */
  
 }
 .iconphone a {
@@ -288,4 +260,64 @@ body {
 }
 
 
-    
+.dropdown-menu {
+   position: relative;
+   right: 0;
+   left: 100%; 
+   width: 60px; 
+ }
+
+
+#onIcon{
+   margin-left: auto;
+   margin-right: 20px;
+   transform: translateY(-3%);
+}
+.pro1{
+   background-color: #ffb300;
+   color: white;
+   width: 3em;
+   height: 3.5em;
+   text-align: center;
+   padding-top: 0.5em;
+   font-size: 18px;
+   border-radius: 5px 0 5px 0;
+
+}
+.pro2{
+   background-color: #C0C0C0;
+   color: white;
+   width: 3em;
+   height: 3.5em;
+   text-align: center;
+   padding-top: 0.5em;
+   font-size: 18px;
+   border-radius: 5px 0 5px 0;
+
+}
+.pro3{
+   background-color: #B87333;
+   color: white;
+   width: 3em;
+   height: 3.5em;
+   text-align: center;
+   padding-top: 0.5em;
+   font-size: 18px;
+   border-radius: 5px 0 5px 0;
+
+}
+.pro4{
+   background-color: #ae8b6a;
+   color: white;
+   width: 3em;
+   height: 3.5em;
+   text-align: center;
+   padding-top: 0.5em;
+   font-size: 18px;
+   border-radius: 5px 0 5px 0;
+
+}
+.pro span{
+   font-weight: 500;
+   font-size: 20px;
+}

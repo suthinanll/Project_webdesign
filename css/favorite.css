@@ -124,6 +124,19 @@ body {
 .submit{
   padding: 20px;
 }
+.dropdown-menu {
+  position: relative;
+  right: 0;
+  left: 100%; 
+  width: 60px; 
+}
+
+
+#onIcon{
+  margin-left: auto;
+  margin-right: 20px;
+  transform: translateY(-3%);
+}
 
 @media screen and (max-width: 574px) {
   .bi-person-fill,.bi-cart3,.bi-bell-fill{
@@ -145,6 +158,7 @@ body {
     margin-right: 30px;
     margin-top: 9em;
 }
+
     .heart-icon {
         color: #ff4d4d;
         cursor: pointer;
@@ -167,33 +181,15 @@ body {
 .iconphone a:hover {
     color: rgb(0, 0, 0);
 }
-.dropdown-menu {
-  position: relative;
-  right: 0;
-  left: 100%; 
-  width: 60px; 
+.bi-person-fill,.bi-cart3,.bi-bell-fill{
+  color: rgb(0, 0, 0 ,0.60);
+}
+.add-to-cart span {
+  display: none;
 }
 
 
-#onIcon{
-  margin-left: auto;
-  margin-right: 20px;
-  transform: translateY(-3%);
-}
 
-@media screen and (max-width: 574px) {
-  .bi-person-fill,.bi-cart3,.bi-bell-fill{
-    color: rgb(0, 0, 0 ,0.60);
-  }
-  .add-to-cart {
-    display: none;
-  }
-  
-
-}
-@media screen and (max-width: 1164px) and (min-width:574px){
-  
-}
 
 
 

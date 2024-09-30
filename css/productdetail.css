@@ -161,3 +161,8 @@ body {
   margin-right: 20px;
   transform: translateY(-3%);
 }
+.col-md-6 a{
+  text-decoration: none;
+  color: black;
+
+}

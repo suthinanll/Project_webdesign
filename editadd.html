@@ -105,28 +105,31 @@
           </div>
         </div>
         <div class="row mb-3">
-          <div class="col-md-12">
-            <label for="address" class="form-label">ที่อยู่</label>
-            <textarea class="form-control" id="address"
-              rows="3">บ้านเลขที่ 123 หมู่ 24 บ้านโนนม่วง ตำบลศิลา อำเภอเมืองขอนแก่นจังหวัดขอนแก่น รหัสไปรษณีย์ 4000</textarea>
-          </div>
+          <div class="row mb-3">
+            <div class="col-md-4 mb-2">
+                <label for="fullname" class="form-label">บ้านเลขที่</label>
+                <input type="text" class="form-control" id="fullname" value="123">
+            </div>
+            <div class="col-md-4">
+                <label for="phone" class="form-label">หมู่</label>
+                <input type="tel" class="form-control" id="phone" value="12">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="road" class="form-label">ถนน/ซอย</label>
+              <input type="text" class="form-control" id="road" value="หลังมอซอย 2">
+            </div>      
         </div>
 
         <div class="row mb-3">
-          <div class="col-md-3 mb-3">
-            <label for="road" class="form-label">ถนน</label>
-            <input type="text" class="form-control" id="road" value="หลังมอซอย 2">
-          </div>
-
-          <div class="col-md-3 mb-3">
+          <div class="col-md-4 mb-3">
             <label for="subdistrict" class="form-label">ตำบล/แขวง</label>
             <input type="text" class="form-control" id="subdistrict" value="ศิลา">
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-4 mb-3">
             <label for="city" class="form-label">อำเภอ</label>
             <input type="text" class="form-control" id="city" value="อำเภอเมืองขอนแก่น">
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-4 mb-3">
             <label for="province" class="form-label">จังหวัด</label>
             <select class="form-select" id="province">
               <option>เลือกจังหวัด</option>
@@ -232,9 +235,7 @@
       </form>
     </div>
   </div><br><br>
-
-
-
+</div>
 
   <div class="container-fluid foott">
     <div class="container"><br>

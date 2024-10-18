@@ -5,7 +5,7 @@
     --footet_header-color: rgb(255, 245, 158);
     --botton-color:#FFB719;
   }
-  .bi-person-fill,.bi-cart-fill,.bi-bell-fill{
+  .iconphone{
     color: rgb(117, 117, 117);
   }
  
@@ -32,7 +32,6 @@
 }
 
 .chat {
-    /* background-color: #ee7203; */
     position: relative;
     right: 20px;
     gap: 20px;
@@ -51,8 +50,6 @@
 
   
 #card-content{
- margin: 0px 20px;
- padding: 10px 30px;
  background-color: white;
  border-radius: 5px;
  width: 100%;
@@ -369,7 +366,7 @@ box-shadow: 0 4px 6px rgba(0, 0, 0,0.2);
 @media screen and (max-width: 576px) {
     
    
-    }
+    
     .pedigree-logo{
         margin-right: 1em;
         margin-top: 1em;
@@ -424,6 +421,10 @@ box-shadow: 0 4px 6px rgba(0, 0, 0,0.2);
         width: auto;
         
       }
+      #shop-details p,h2{
+        margin-left: -15px;
+      }
+    
     
 
 }

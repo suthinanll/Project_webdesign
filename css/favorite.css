@@ -158,6 +158,9 @@ body {
     margin-right: 30px;
     margin-top: 9em;
 }
+.add-to-cart span {
+  display: none;
+}
 
     .heart-icon {
         color: #ff4d4d;
@@ -178,15 +181,7 @@ body {
     color: rgb(117, 117, 117); /* กำหนดสีหรือสไตล์อื่น ๆ */
 }
 
-.iconphone a:hover {
-    color: rgb(0, 0, 0);
-}
-.bi-person-fill,.bi-cart3,.bi-bell-fill{
-  color: rgb(0, 0, 0 ,0.60);
-}
-.add-to-cart span {
-  display: none;
-}
+
 
 
 

@@ -19,7 +19,7 @@
                     alt="รูปภาพโลโก้เว็บไซต์ Tail and Paw"></a>
             <div class="d-flex d-lg-none ms-auto align-items-center ">
                 <span class="d-flex me-3 i iconphone">
-                    <a class="nav-link me-2" href="./shopping.html"><i class="bi bi-cart3"></i></a>
+                    <a class="nav-link me-2" href="./shopping.html"><i class="bi bi-cart-fill"></i></a>
                     <a class="nav-link" href="./login.html">เข้าสู่ระบบ</a>
                 </span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -63,7 +63,7 @@
 
                 <ul class="navbar-nav ms-auto d-none d-lg-flex iconphone">
                     <li class="nav-item">
-                        <a class="nav-link" href="./shopping.html"><i class="bi bi-cart3"></i></a>
+                        <a class="nav-link" href="./shopping.html"><i class="bi bi-cart-fill"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./login.html">เข้าสู่ระบบ</a>
@@ -77,6 +77,7 @@
     <div class="container-fluid">
 
         <div class="container mt-4">
+
             <h3 class="mb-4">กรอกที่อยู่สำหรับการจัดส่ง</h3>
             <form>
                 <div class="row mb-3">
@@ -89,13 +90,23 @@
                         <input type="tel" class="form-control" id="phone" placeholder="กรอกเบอร์โทรศัพท์">
                     </div>
                 </div>
+
                 <div class="row mb-3">
-                    <div class="col-md-12">
-                        <label for="address" class="form-label">ที่อยู่</label>
-                        <textarea class="form-control" id="address" rows="3"
-                            placeholder="กรอกรายละเอียดที่อยู่"></textarea>
+                    <div class="col-md-4 mb-2">
+                        <label for="fullname" class="form-label">บ้านเลขที่</label>
+                        <input type="text" class="form-control" id="fullname" placeholder="กรอกบ้านเลขที่">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="phone" class="form-label">หมู่</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="กรอกหมู่">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="road" class="form-label">ถนน/ซอย</label>
+                        <input type="text" class="form-control" id="road" placeholder="กรอกชื่อถนน">
                     </div>
                 </div>
+        
+            
 
                 <div class="row mb-3">
                     <div class="col-md-4 mb-3">
@@ -194,7 +205,9 @@
                             </optgroup>
                         </select>
                     </div>
+
                 </div>
+
                 <div class="row mb-3">
                     <div class="col-md-4">
                         <label for="zipcode" class="form-label">รหัสไปรษณีย์</label>
@@ -206,6 +219,8 @@
                     <label for="address" class="form-label">บันทึกเพิ่มเติม</label>
                     <textarea class="form-control" id="note" rows="3" placeholder="กรอกรายละเอียดที่อยู่"></textarea>
                 </div><br>
+
+                
                 <a class="btn btn-warning btn-md w-100" href="./register.html" onclick="address_add()">
                     เพิ่มที่อยู่
                 </a><br><br>

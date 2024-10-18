@@ -17,7 +17,7 @@
           <a class="navbar-brand" href="#"><img class="logo" src="./img/logo2.png" alt="รูปภาพโลโก้เว็บไซต์ Tail and Paw"></a>
           <div class="d-flex d-lg-none ms-auto align-items-center">
             <span class="d-flex me-4 iconphone" style="font-size: 1.25em;">
-              <a class="nav-link me-2" href="shopping.html"><i class="bi bi-cart3"></i></a>
+              <a class="nav-link me-2" href="shopping.html"><i class="bi bi-cart-fill"></i></a>
               <a class="nav-link me-1" href="notification.html"><i class="bi bi-bell-fill"></i></a>
               <a class="nav-link ms-1" href="useraccount.html"><i class="bi bi-person-fill"></i></a>
             </span>
@@ -62,7 +62,7 @@
     
             <ul class="navbar-nav ms-auto d-none d-lg-flex iconphone">
               <li class="nav-item">
-                <a class="nav-link" style="font-size: 1.2em;" href="./shopping.html"><i class="bi bi-cart3"></i></a>
+                <a class="nav-link" style="font-size: 1.2em;" href="./shopping.html"><i class="bi bi-cart-fill"></i></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link me-1" style="font-size: 1.2em;" href="./notification.html"><i class="bi bi-bell-fill"></i></a>
@@ -92,73 +92,76 @@
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item ms-2"><a class="linkb" href="./index.html">หน้าหลัก</a></li>
-                <li class="breadcrumb-item ms-1"><a class="linkb" href="./profile.html">บัญขีผู้ใช้</a></li>
+                <li class="breadcrumb-item ms-1"><a class="linkb" href="./useraccount.html">บัญขีผู้ใช้</a></li>
                 <li class="breadcrumb-item active" aria-current="page">ประวัติการซื้อสินค้า</li>
             </ol>
         </nav>
 
-        <div class="container mt-4">
-            <h4 class="text-center">ประวัติการซื้อสินค้า</h4>
-            <form action="search">
-                <!-- แถบค้นหา -->
-                <div class="search-bar d-flex mb-3">
-                    <select class="form-select me-2" aria-label="เลือกหมวดหมู่">
-                        <option selected>เลือกหมวดหมู่</option>
-                        <option value="1">อาหาร และ ขนม</option>
-                        <option value="2">ผลิตภัณฑ์ดูแลขน</option>
-                        <option value="3">สินค้าอื่นๆ</option>
-                    </select>
-        
-                    <input type="text" class="form-control me-1" placeholder="ค้นหารายการสินค้า...">
-        
-                    <button class="btn btn-success">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </div>
-        
-                <!-- ช่วงเวลา -->
-               
-                    <h5>ค้นหาตามช่วงเวลา</h5>
-                    <div class="date-range d-flex  mb-3 ">
-                        <input type="date" class="form-control me-2" id="startDate" value="2024-09-22">
-                        <span> - </span>
-                        <input type="date" class="form-control ms-2" id="endDate" value="2024-09-26">
-                    </div>
-               
-            </form>
-
-            <div class="row align-items-center mb-3 product-card">
-                <div class="col-2">
-                    <img src="./img/p2.png" alt="product-image" class="img-fluid">
-                </div>
-                <div class="col-7">
-                    <p class="text-muted">จัดส่งสำเร็จเมื่อวันที่ 24/09/2024 </p>
-                    <p class="pdescription">Pedigree อาหารสูตร Simmered Beef Loaf with Vegetables<br>
-                        สูตรรสเนื้อตุ๋นผสมผัก – 130g</p>
-                    <span class="product-price">฿ 24.00 บาท</span>
-                </div>
-                <div class="col-3 d-flex justify-content-end">
-                    <button type="button" class="btn btn-danger ">สั่งซื้ออีกครั้ง <i class="bi bi-cart3"></i></button>
-                </div>
-            </div>
-
-            <div class="row align-items-center mb-3 product-card">
-                <div class="col-2">
-                    <img src="./img/p2.jpg" alt="product-image" class="img-fluid">
-                </div>
-                <div class="col-7">
-                    <p class="text-muted">จัดส่งสำเร็จเมื่อวันที่ 27/09/2024 </p>
-                    <p class="pdescription">Petsimo เพ็ทซิโม อาหารสุขภาพแบบเปียก<br>
-                        สูตรไก่บ้านเนื้อวัวในเยลลี่ – 70g (ได้ 6 ซอง)</p>
-                    <span class="product-price">฿ 156.00 บาท</span>
-                </div>
-                <div class="col-3 d-flex justify-content-end">
-                    <button type="button" class="btn btn-danger fontbut">สั่งซื้ออีกครั้ง <i
-                            class="bi bi-cart3"></i></button>
-                </div>
-            </div>
-
+       <div class="container mt-4">
+    <h4 class="text-center">ประวัติการซื้อสินค้า</h4>
+    <form action="search">
+        <!-- แถบค้นหา -->
+        <div class="input-group mb-3">
+            <select class="form-select" aria-label="เลือกหมวดหมู่">
+                <option selected>เลือกหมวดหมู่</option>
+                <option value="1">อาหาร และ ขนม</option>
+                <option value="2">ผลิตภัณฑ์ดูแลขน</option>
+                <option value="3">สินค้าอื่นๆ</option>
+            </select>
+            <input type="text" class="form-control" placeholder="ค้นหารายการสินค้า...">
+            <button class="btn btn-success" type="submit">
+                <i class="bi bi-search"></i>
+            </button>
         </div>
+
+        <!-- ช่วงเวลา -->
+        <h5>ค้นหาตามช่วงเวลา</h5>
+        <div class="input-group mb-3">
+            <input type="date" class="form-control" id="startDate" value="2024-09-22">
+            <span class="input-group-text">-</span>
+            <input type="date" class="form-control" id="endDate" value="2024-09-26">
+        </div>
+    </form>
+
+    <!-- การ์ดประวัติการซื้อสินค้า -->
+    <div class="card mb-3">
+        <div class="row g-0 align-items-center">
+            <div class="col-md-2">
+                <img src="./img/p2.png" class="img-fluid rounded-start" alt="product-image">
+            </div>
+            <div class="col-md-7">
+                <div class="card-body">
+                    <p class="card-text text-muted">จัดส่งสำเร็จเมื่อวันที่ 24/09/2024</p>
+                    <h5 class="card-title">Pedigree อาหารสูตร Simmered Beef Loaf with Vegetables</h5>
+                    <p class="card-text">สูตรรสเนื้อตุ๋นผสมผัก – 130g</p>
+                    <p class="card-text"><strong>฿ 24.00 บาท</strong></p>
+                </div>
+            </div>
+            <div class="col-md-3 text-end pe-4">
+                <button type="button" class="btn btn-danger">สั่งซื้ออีกครั้ง <i class="bi bi-cart3"></i></button><br><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="row g-0 align-items-center">
+            <div class="col-md-2">
+                <img src="./img/p2.jpg" class="img-fluid rounded-start" alt="product-image">
+            </div>
+            <div class="col-md-7">
+                <div class="card-body">
+                    <p class="card-text text-muted">จัดส่งสำเร็จเมื่อวันที่ 27/09/2024</p>
+                    <h5 class="card-title">Petsimo เพ็ทซิโม อาหารสุขภาพแบบเปียก</h5>
+                    <p class="card-text">สูตรไก่บ้านเนื้อวัวในเยลลี่ – 70g (ได้ 6 ซอง)</p>
+                    <p class="card-text"><strong>฿ 156.00 บาท</strong></p>
+                </div>
+            </div>
+            <div class="col-md-3 text-end pe-4">
+                <button type="button" class="btn btn-danger">สั่งซื้ออีกครั้ง <i class="bi bi-cart3"></i></button><br><br>
+            </div>
+        </div>
+    </div>
+</div>
     </div>
 
     <div class="container-fluid foott mt-5">

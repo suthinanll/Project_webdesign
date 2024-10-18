@@ -16,6 +16,7 @@
  #shop-details{
     display: flex;
     margin: 20px;
+    gap: 20px;
 
 }
 .pedigree-logo{
@@ -23,8 +24,8 @@
     height: auto;
 
 }
-p,h2{
-    margin: 15px 0 0 30px;
+#side-filters{
+    max-width: 300px;
 }
 
 .chat {
@@ -47,12 +48,20 @@ p,h2{
 
   
 #card-content{
- padding: 0px 80px;
+ margin: 0px 20px;
+ padding: 10px 30px;
  background-color: white;
  border-radius: 5px;
  width: 100%;
  
 }
+
+.card-img-top {
+    width: 100%;
+    height: 21em; 
+    object-fit: cover; 
+  }
+  
 
 .pro1{
     background-color: #ffb300;
@@ -102,16 +111,8 @@ p,h2{
     font-weight: 500;
     font-size: 20px;
 }
-/* .card .pro:nth-of-type(2) {
-    background-color: #533b2d;
-    color: white;
-    width: 3em;
-    height: 3.5em;
-    text-align: center;
-    padding-top: 0.5em;
-    font-size: 18px;
-    border-radius: 5px 0 5px 0;
-} */
+
+
 
 
 .section-product{
@@ -147,34 +148,10 @@ box-shadow: 0 4px 6px rgba(0, 0, 0,0.2);
 
 }
 
-.icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    }
-
-.icon-circle {
-    width: 150px;
-    height: 150px;
-    background-color: #f9cc5b; 
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-      }
 
       
-.icon-item {
-    text-align: center;
-      }
 
-  
-.icon-circle img {
-    width: 50px; 
-    height: auto;
-    }
+
 .catagory{
     width: 90%;
     padding: 30px 0;
@@ -234,11 +211,31 @@ box-shadow: 0 4px 6px rgba(0, 0, 0,0.2);
             height: auto; 
             object-fit: cover; 
         }
-        .add{
+
+        .img-banner-container {
+            width: 100%; 
+          }
+          
+          .add {
             display: flex;
             gap: 10px;
             margin-top: 10px;
-        }
+            width: 100%; 
+          }
+          
+          .img-add-container {
+            flex: 1; /* ทำให้แต่ละรูปภาพแบ่งความกว้างเท่ากัน */
+          }
+          
+          .img-add-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+
+
+
+
         .price-range input {
             width: 70px;
         }
@@ -298,12 +295,6 @@ box-shadow: 0 4px 6px rgba(0, 0, 0,0.2);
             margin: 0 0 0 3em;
         }
         
-        /* .filters button { 
-            margin-top: 2em;
-            padding: 0.3em 3.5em;
-            margin-left: auto;
-            margin-right: auto;
-        } */
         
         .d-block {
             position: relative;
@@ -372,7 +363,7 @@ box-shadow: 0 4px 6px rgba(0, 0, 0,0.2);
         }
         
 
-@media screen and (max-width: 574px) {
+@media screen and (max-width: 576px) {
     .bi-person-fill,.bi-cart3,.bi-bell-fill{
       color: rgb(0, 0, 0 ,0.60);
    
@@ -426,10 +417,15 @@ box-shadow: 0 4px 6px rgba(0, 0, 0,0.2);
         color: white;
        
     }
+    .card-img-top {
+        height: 15em; 
+        width: auto;
+        
+      }
     
 
 }
-@media screen and (max-width: 1164px) and (min-width:574px){
+@media screen and (max-width: 991px) and (min-width:576px){
     .shop{
         font-size: 1.2rem;
         margin-left: 4em;
@@ -461,7 +457,12 @@ box-shadow: 0 4px 6px rgba(0, 0, 0,0.2);
         color: white;
        
     }
-    
+    .card-img-top {
+        width: 100%;
+        height: 15em; 
+        object-fit: cover; 
+      }
+      
 
    
 

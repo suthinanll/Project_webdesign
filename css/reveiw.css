@@ -3,7 +3,12 @@
 :root {
    --footet_header-color: rgb(255, 245, 158);
    --botton-color:#FFB719;
+   
 }
+.bi-person-fill,.bi-cart-fill,.bi-bell-fill{
+    color: rgb(117, 117, 117);
+  }
+ 
 body {
     max-width: 1980px;      
     min-width: 320px;

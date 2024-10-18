@@ -5,6 +5,9 @@
     --footet_header-color: rgb(255, 245, 158);
     --botton-color:#FFB719;
   }
+  .bi-person-fill,.bi-cart-fill,.bi-bell-fill{
+    color: rgb(117, 117, 117);
+  }
  
 
  #container-sectionn {
@@ -364,8 +367,7 @@ box-shadow: 0 4px 6px rgba(0, 0, 0,0.2);
         
 
 @media screen and (max-width: 576px) {
-    .bi-person-fill,.bi-cart3,.bi-bell-fill{
-      color: rgb(0, 0, 0 ,0.60);
+    
    
     }
     .pedigree-logo{

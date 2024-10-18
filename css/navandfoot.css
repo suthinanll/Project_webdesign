@@ -5,6 +5,9 @@
     --footet_header-color: rgb(255, 245, 158);
     --botton-color:#FFB719;
   }
+  .iconphone a {
+    color: rgb(117, 117, 117);
+}
  
 
 body {
@@ -68,14 +71,12 @@ body {
  }
 
  @media screen and (max-width: 574px) {
-    .bi-person-fill,.bi-cart3,.bi-bell-fill{
-      color: rgb(0, 0, 0 ,0.60);
-   
-    }}
-
-    .iconphone a {
+    .bi-person-fill,.bi-cart-fill,.bi-bell-fill{
         color: rgb(117, 117, 117);
+   
     }
+
+    
     
     .iconphone a:hover {
         color: rgb(0, 0, 0);
@@ -93,3 +94,4 @@ body {
         margin-right: 20px;
         transform: translateY(-3%);
      }
+    }

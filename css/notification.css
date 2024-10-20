@@ -135,6 +135,14 @@ body {
 .bi-person-fill,.bi-cart-fill,.bi-bell-fill{
     color: rgb(117, 117, 117);
 }
+
+.col-9 h3,p{
+    margin-left: -20px;
+   }
+.btncontact i{
+    color: rgb(48, 48, 48);
+}
+    
 @media screen and (max-width: 574px) {
     .bi-person-fill,.bi-cart-fill,.bi-bell-fill{
         color: rgb(117, 117, 117);
@@ -173,8 +181,12 @@ body {
         width: 2em;
         height: 2em;
     }
+   .col-9 h3,p{
+    margin-left: -30px;
+   }
     
     }
+ 
     .dropdown-menu {
         position: relative;
         right: 0;
